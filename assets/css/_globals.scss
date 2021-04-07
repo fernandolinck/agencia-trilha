@@ -1,0 +1,94 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+$header-height: 3rem;
+
+/* Colors */
+$darkGray: hsl(200, 14%, 12%);
+$mainYellow: hsl(39, 85%, 52%);
+$textGray: hsl(0, 1%, 49%);
+$lightYellow: hsl(43, 100%, 72%);
+$white: hsl(0, 0%, 100%);
+$darkGold: hsl(39, 85%, 36%);
+
+/* Font Sizes */
+$body-font: "Montserrat", sans-serif;
+$biggest-font-size: 2.5rem; // 40px
+$h1-font-size: 1.5rem; // 24px
+$h2-font-size: 1.25rem; // 20px
+$h3-font-size: 1.125rem; // 18px
+$normal-font-size: 0.938rem; // 15px
+$small-font-size: 0.813rem; // 13px
+$smaller-font-size: 0.75rem; // 12px
+
+/* Font Weight */
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+/* Margins */
+$mb-1: 0.5rem; // 8px
+$mb-2: 1rem; // 16px
+$mb-3: 1.5rem; // 24px
+$mb-4: 2rem; // 32px
+$mb-5: 2.5rem; // 40px
+$mb-6: 3rem; // 48px
+
+/* Z-Index */
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+@media screen and (min-width: 1024px) {
+    $biggest-font-size: 4.5rem; // 72px
+    $h1-font-size: 2.25rem; // 36px
+    $h2-font-size: 1.5rem; // 24px
+    $h3-font-size: 1.25rem; // 20px
+    $normal-font-size: 1rem; // 16px
+    $small-font-size: 0.875rem; // 14px
+    $smaller-font-size: 0.813rem; // 13px
+}
+
+/* Base Styles */
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $body-font;
+    font-size: $normal-font-size;
+    background-color: $white;
+    color: $white;
+}
+
+h1, h2, ul, p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Layout */
+.main {
+    position: relative;
+}
+
+.bd-container {
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
