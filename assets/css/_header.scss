@@ -1,0 +1,56 @@
+/* Header */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-tooltip;
+}
+
+/* Nav */
+.nav {
+    max-width: 1024px;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        &__menu {
+            position: fixed;
+            top: 4rem;
+            left: 0;
+            right: -190%;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 1.5rem;
+            background-color: $darkGray;
+            color: $white;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    &__toggle {
+        color: $darkGray;
+    }
+
+    &__link {
+        color: $white;
+        font-weight: $font-medium;
+    }
+
+    &__item {
+        margin-bottom: 1.5rem;
+    }
+
+    &__toggle {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}
+
+/* Show Menu */
+.show-menu {
+    right: 0;
+}
