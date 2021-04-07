@@ -31,10 +31,6 @@
         }
     }
 
-    &__toggle {
-        color: $darkGray;
-    }
-
     &__link {
         color: $white;
         font-weight: $font-medium;
@@ -45,7 +41,7 @@
     }
 
     &__toggle {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 }
