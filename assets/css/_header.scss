@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     z-index: $z-tooltip;
+    align-items: center;
 }
 
 /* Nav */
@@ -41,8 +42,18 @@
     }
 
     &__toggle {
+        display: flex;
         font-size: 1.5rem;
         cursor: pointer;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 70%;
+            height: 70%;
+        }
     }
 }
 

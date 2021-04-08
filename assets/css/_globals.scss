@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
-$header-height: 3rem;
+$header-height: 5rem;
 
 /* Colors */
 $darkGray: hsl(200, 14%, 12%);
@@ -49,6 +49,22 @@ $z-fixed: 100;
     $normal-font-size: 1rem; // 16px
     $small-font-size: 0.875rem; // 14px
     $smaller-font-size: 0.813rem; // 13px
+}
+
+/* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: .8rem 1.5rem;
+    background-color: $mainYellow;
+    color: $white;
+    border-radius: 2rem;
+    font-weight: $font-medium;
+}
+
+.button:hover {
+    background-color: $lightYellow;
+    color: $white;
 }
 
 /* Base Styles */

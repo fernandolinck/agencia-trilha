@@ -9,7 +9,7 @@
         width: 100%;
         height: 100vh;
         object-fit: cover;
-        object-position: 75%;
+        object-position: 65%;
     }
 
     &__container {
@@ -28,6 +28,7 @@
 
     &__title {
         font-size: $biggest-font-size;
+        margin-bottom: $mb-1;
 
         span {
             color: $mainYellow;
@@ -37,5 +38,11 @@
     &__subtitle {
         font-size: $h3-font-size;
         font-weight: $font-light;
+        margin-bottom: $mb-1;
+        color: $white;
+    }
+
+    &__button {
+        margin-top: $mb-1;
     }
 }

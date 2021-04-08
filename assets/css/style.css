@@ -5,6 +5,26 @@
 /* Font Weight */
 /* Margins */
 /* Z-Index */
+/* Buttons */
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .8rem 1.5rem;
+  background-color: #eda41d;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #ffd770;
+  color: white;
+}
+
 /* Base Styles */
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
@@ -55,12 +75,15 @@ img {
   top: 0;
   left: 0;
   z-index: 10;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Nav */
 .nav {
   max-width: 1024px;
-  height: 3rem;
+  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,8 +122,25 @@ img {
 }
 
 .nav__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo img {
+  width: 70%;
+  height: 70%;
 }
 
 /* Show Menu */
@@ -121,8 +161,8 @@ img {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 75%;
-     object-position: 75%;
+  -o-object-position: 65%;
+     object-position: 65%;
 }
 
 .hero__container {
@@ -142,6 +182,7 @@ img {
 
 .hero__title {
   font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero__title span {
@@ -151,5 +192,11 @@ img {
 .hero__subtitle {
   font-size: 1.125rem;
   font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.hero__button {
+  margin-top: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
