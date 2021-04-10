@@ -73,10 +73,6 @@
         margin-bottom: $mb-3;
     }
 
-    &__infos {
-        
-    }
-
     &__title {
         font-size: $h2-font-size;
         font-weight: $font-bold;
@@ -88,7 +84,7 @@
         color: $lightYellow;
         font-weight: $font-bold;
         font-size: 1rem;
-        margin-bottom: .1rem;
+        margin-bottom: 0.1rem;
         display: block;
     }
 
@@ -99,9 +95,6 @@
 
     &__email {
         margin-top: 2rem;
-    }
-
-    &__socials {
     }
 
     &__social {
@@ -117,4 +110,35 @@
 /* Show Menu */
 .show-menu {
     right: 0;
+}
+
+/* Scroll Menu */
+.active-link {
+    position: relative;
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -.7rem;
+    left: 0;
+    width: 65%;
+    height: 3px;
+    background-color: $white;
+}
+
+/* Scroll header */
+.scroll-header {
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-header .nav__logo, 
+.scroll-header .nav__toggle,
+.scroll-header .nav__link {
+    color: $darkGray;
+}
+
+.scroll-header .nav__menu {
+    background-color: $lightYellow;
 }
