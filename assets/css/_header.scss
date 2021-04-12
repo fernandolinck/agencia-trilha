@@ -6,6 +6,7 @@
     left: 0;
     z-index: $z-tooltip;
     align-items: center;
+    transition: 0.5s ease-in-out;
 }
 
 /* Nav */
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
     @media screen and (max-width: 768px) {
         &__menu {
@@ -131,6 +133,7 @@
 .scroll-header {
     background-color: $white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
 }
 
 .scroll-header .nav__logo, 
@@ -141,4 +144,6 @@
 
 .scroll-header .nav__menu {
     background-color: $lightYellow;
+    transition: 0.5s ease-in-out;
 }
+

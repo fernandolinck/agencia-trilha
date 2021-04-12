@@ -37,9 +37,10 @@ window.addEventListener('scroll', scrollActive)
 /* Change header background */
 function scrollHeader (){
     const header = document.getElementById('header')
-    if(this.scrollY >= 200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    if(this.scrollY >= 20) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
 
 /* Scroll to the top */
 function scrollTop (){
@@ -47,3 +48,15 @@ function scrollTop (){
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
+
+/* Accordion */
+document.querySelectorAll('.processo__accordion-passo').forEach((item) => {
+    item.addEventListener('click', (event) => {
+        item.classList.toggle('open');
+
+        // Add "collapsing" class to .processo__collapse (sibling)
+
+       // Remove "collapsing" class and add "open" class
+        item.nextElementSibling.classList.toggle('open');
+    });
+});

@@ -1,0 +1,197 @@
+.processo {
+    background-color: $white;
+    overflow: hidden;
+
+    &__container {
+        position: relative;
+        height: 100vh;
+        grid-template-rows: repeat(3, max-content);
+        align-content: center;
+        row-gap: 2rem;
+    }
+
+    &__data {
+        margin-top: 7rem;
+        grid-template-columns: 1;
+        justify-items: center;
+    }
+
+    &__tag {
+        color: $mainYellow;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        justify-self: center;
+        margin-bottom: $mb-1;
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 1.2;
+        color: $darkGray;
+        text-align: center;
+        margin-bottom: $mb-1;
+    }
+
+    /* Accordion text */
+    &__info {
+        margin: 3rem;
+    }
+
+    &__ac-title {
+        color: $darkGray;
+    }
+
+    &__ac-description {
+        color: $textGray;
+    }
+
+    /* Accordion */
+    &__info {
+       
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin-top: 0;
+    }
+
+    &__accordion {
+    }
+
+    &__accordion-item {
+        padding-top: $mb-2;
+    }
+
+    &__accordion-passo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+        border: none;
+        background: transparent;
+        padding: 0;
+        font-size: $normal-font-size;
+        font-family: "Montserrat", sans-serif;
+        color: $darkGray;
+        font-weight: $font-semibold;
+        margin-bottom: $mb-2;
+    }
+
+    &__accordion-passo::after {
+        content: "";
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url("/assets/img/bx-chevron-right.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+
+    &__accordion-passo.open {
+        font-weight: $font-bold;
+    }
+
+    &__content {
+        color: $textGray;
+        line-height: 1.4;
+        margin-bottom: $mb-2;
+    }
+
+    /* Collapse */
+
+    
+
+    @media (min-width: 56rem) {
+        /* Accordion*/
+        h1,
+        h2,
+        h3 {
+            margin-top: 0;
+        }
+
+        &__accordion {
+        }
+
+        &__accordion-item {
+            padding-top: $mb-2;
+        }
+
+        &__accordion-passo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: left;
+            border: none;
+            background: transparent;
+            padding: 0;
+            font-size: $normal-font-size;
+            font-family: "Montserrat", sans-serif;
+            color: $darkGray;
+            font-weight: $font-medium;
+            margin-bottom: $mb-2;
+        }
+
+        &__accordion-passo::after {
+            content: "";
+            display: block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-image: url("/assets/img/bx-chevron-right.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            transition: transform 300ms ease-in-out;
+        }
+
+        &__content {
+            color: $textGray;
+            line-height: 1.4;
+            margin-bottom: $mb-2;
+        }
+
+        &__info {
+            display: flex;
+        }
+
+        &__ac-text,
+        &__accordion {
+            flex: 1;
+        }
+
+        &__ac-title {
+        }
+
+        &__ac-description {
+        }
+
+        /* Collapse */
+        &__accordion-passo:focus {
+            
+        }
+
+        &__accordion-passo.open {
+            font-weight: $font-bold;
+        }
+
+        &__accordion-passo.open::after {
+            transform: rotate(90deg);
+        }
+
+        &__collapse.collapse {
+            display: none;
+        }
+
+        &__collapse.collapsing {
+            
+        }
+
+        &__collapse.open {
+            display: block;
+        }
+    }
+}
