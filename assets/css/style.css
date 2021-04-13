@@ -491,7 +491,7 @@ img {
   .processo__content {
     color: #7e7c7c;
     line-height: 1.4;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
   .processo__info {
     display: -webkit-box;
@@ -510,8 +510,16 @@ img {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
+  .processo__collapse {
+    -webkit-transition: height 300ms ease-in-out;
+    transition: height 300ms ease-in-out;
+  }
   .processo__collapse.collapse {
     display: none;
+  }
+  .processo__collapse.collapsing {
+    height: 0;
+    overflow: hidden;
   }
   .processo__collapse.open {
     display: block;

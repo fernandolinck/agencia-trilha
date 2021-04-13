@@ -151,7 +151,7 @@
         &__content {
             color: $textGray;
             line-height: 1.4;
-            margin-bottom: $mb-2;
+            padding-bottom: $mb-2;
         }
 
         &__info {
@@ -182,12 +182,17 @@
             transform: rotate(90deg);
         }
 
+        &__collapse {
+            transition: height 300ms ease-in-out;
+        }
+
         &__collapse.collapse {
             display: none;
         }
 
         &__collapse.collapsing {
-            
+            height: 0;
+            overflow: hidden;
         }
 
         &__collapse.open {
