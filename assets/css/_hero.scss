@@ -1,6 +1,7 @@
 .hero {
     height: 100vh;
     position: relative;
+    margin: auto;
 
     &__bg {
         position: absolute;
@@ -13,12 +14,14 @@
     }
 
     &__container {
+        margin: auto;
         position: relative;
         height: 100%;
         display: grid;
         grid-template-columns: 2fr 0.25fr;
         align-content: center;
-        
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     &__subtitle,

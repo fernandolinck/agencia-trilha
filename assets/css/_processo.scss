@@ -1,6 +1,9 @@
 .processo {
     background-color: $white;
     overflow: hidden;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
 
     &__container {
         position: relative;
@@ -47,10 +50,7 @@
     }
 
     /* Accordion */
-    &__info {
-       
-    }
-
+    /* Accordion*/
     h1,
     h2,
     h3 {
@@ -76,7 +76,7 @@
         font-size: $normal-font-size;
         font-family: "Montserrat", sans-serif;
         color: $darkGray;
-        font-weight: $font-semibold;
+        font-weight: $font-medium;
         margin-bottom: $mb-2;
     }
 
@@ -89,21 +89,58 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
+        transition: transform 300ms ease-in-out;
+    }
+
+    &__content {
+        color: $textGray;
+        line-height: 1.4;
+        padding-bottom: $mb-2;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__ac-text,
+    &__accordion {
+        flex: 1;
+    }
+
+    &__ac-title {
+    }
+
+    &__ac-description {
+    }
+
+    /* Collapse */
+    &__accordion-passo:focus {
     }
 
     &__accordion-passo.open {
         font-weight: $font-bold;
     }
 
-    &__content {
-        color: $textGray;
-        line-height: 1.4;
-        margin-bottom: $mb-2;
+    &__accordion-passo.open::after {
+        transform: rotate(90deg);
     }
 
-    /* Collapse */
+    &__collapse {
+        transition: height 300ms ease-in-out;
+    }
 
-    
+    &__collapse.collapse {
+        display: none;
+    }
+
+    &__collapse.collapsing {
+        height: 0;
+        overflow: hidden;
+    }
+
+    &__collapse.open {
+        display: block;
+    }
 
     @media (min-width: 56rem) {
         /* Accordion*/
@@ -171,7 +208,6 @@
 
         /* Collapse */
         &__accordion-passo:focus {
-            
         }
 
         &__accordion-passo.open {
