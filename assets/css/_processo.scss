@@ -7,17 +7,17 @@
 
     &__container {
         position: relative;
-        height: 100vh;
+        height: 100%;
         grid-template-rows: repeat(3, max-content);
         align-content: center;
-        row-gap: 2rem;
+        row-gap: 1rem;
     }
 
-    &__data {
-        margin-top: 7rem;
-        grid-template-columns: 1;
-        justify-items: center;
-    }
+    //&__data {
+        //margin-top: 0.rem;
+        //grid-template-columns: 2;
+        //justify-items: center;
+    //}
 
     &__tag {
         color: $mainYellow;
@@ -33,116 +33,34 @@
         line-height: 1.2;
         color: $darkGray;
         text-align: center;
-        margin-bottom: $mb-1;
+        margin-bottom: 0.5rem;
     }
 
-    /* Accordion text */
-    &__info {
-        margin: 3rem;
-    }
+    @include breakpoint-down(small) {
+        &__data {
+            margin-top: 3rem;
+        }
+        /* Accordion text */
+        &__ac-text {
+            align-self: center;
+        }
 
-    &__ac-title {
-        color: $darkGray;
-    }
+        &__info {
+            margin: 2rem;
+            display: flex;
+        }
 
-    &__ac-description {
-        color: $textGray;
-    }
+        &__ac-title {
+            color: $darkGray;
+            margin-bottom: 2rem;
+        }
 
-    /* Accordion */
-    /* Accordion*/
-    h1,
-    h2,
-    h3 {
-        margin-top: 0;
-    }
+        &__ac-description {
+            color: $textGray;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
 
-    &__accordion {
-    }
-
-    &__accordion-item {
-        padding-top: $mb-2;
-    }
-
-    &__accordion-passo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        text-align: left;
-        border: none;
-        background: transparent;
-        padding: 0;
-        font-size: $normal-font-size;
-        font-family: "Montserrat", sans-serif;
-        color: $darkGray;
-        font-weight: $font-medium;
-        margin-bottom: $mb-2;
-    }
-
-    &__accordion-passo::after {
-        content: "";
-        display: block;
-        width: 1.5rem;
-        height: 1.5rem;
-        background-image: url("/assets/img/bx-chevron-right.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
-        transition: transform 300ms ease-in-out;
-    }
-
-    &__content {
-        color: $textGray;
-        line-height: 1.4;
-        padding-bottom: $mb-2;
-    }
-
-    &__info {
-        display: flex;
-    }
-
-    &__ac-text,
-    &__accordion {
-        flex: 1;
-    }
-
-    &__ac-title {
-    }
-
-    &__ac-description {
-    }
-
-    /* Collapse */
-    &__accordion-passo:focus {
-    }
-
-    &__accordion-passo.open {
-        font-weight: $font-bold;
-    }
-
-    &__accordion-passo.open::after {
-        transform: rotate(90deg);
-    }
-
-    &__collapse {
-        transition: height 300ms ease-in-out;
-    }
-
-    &__collapse.collapse {
-        display: none;
-    }
-
-    &__collapse.collapsing {
-        height: 0;
-        overflow: hidden;
-    }
-
-    &__collapse.open {
-        display: block;
-    }
-
-    @media (min-width: 56rem) {
         /* Accordion*/
         h1,
         h2,
@@ -151,13 +69,24 @@
         }
 
         &__accordion {
+            width: 100%;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
         }
 
         &__accordion-item {
-            padding-top: $mb-2;
+            align-self: center;
+            background-color: $lightYellow;
+            padding: $mb-2;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
+            justify-self: center;
         }
 
         &__accordion-passo {
+            cursor: pointer;
+            margin-top: $mb-1;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -170,7 +99,126 @@
             font-family: "Montserrat", sans-serif;
             color: $darkGray;
             font-weight: $font-medium;
-            margin-bottom: $mb-2;
+            margin-bottom: $mb-1;
+        }
+
+        &__accordion-passo::after {
+            content: "";
+            display: block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-image: url("/assets/img/bx-chevron-right.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            transition: transform 300ms ease-in-out;
+        }
+
+        &__content {
+            color: $textGray;
+            line-height: 1.4;
+            padding-bottom: $mb-2;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__ac-text,
+        &__accordion {
+            flex: 1;
+        }
+
+        /* Collapse */
+
+        &__accordion-passo.open {
+            font-weight: $font-bold;
+        }
+
+        &__accordion-passo.open::after {
+            transform: rotate(90deg);
+        }
+
+        &__collapse {
+            transition: height 300ms ease-in-out;
+        }
+
+        &__collapse.collapse {
+            display: none;
+        }
+
+        &__collapse.collapsing {
+            height: 0;
+            overflow: hidden;
+        }
+
+        &__collapse.open {
+            display: block;
+        }
+    }
+
+    @include breakpoint-up(medium) {
+        /* Accordion text */
+
+        &__data {
+            margin-top: 3rem;
+        }
+        &__ac-text {
+            align-self: center;
+        }
+
+        &__info {
+            margin: 2rem;
+            display: flex;
+        }
+
+        &__ac-title {
+            color: $darkGray;
+            margin-bottom: 2rem;
+        }
+
+        &__ac-description {
+            color: $textGray;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        /* Accordion*/
+        h1,
+        h2,
+        h3 {
+            margin-top: 0;
+        }
+
+        &__accordion {
+            margin-right: 2rem;
+        }
+
+        &__accordion-item {
+            background-color: $lightYellow;
+            padding: $mb-2;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        &__accordion-passo {
+            cursor: pointer;
+            margin-top: $mb-1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: left;
+            border: none;
+            background: transparent;
+            padding: 0;
+            font-size: $normal-font-size;
+            font-family: "Montserrat", sans-serif;
+            color: $darkGray;
+            font-weight: $font-medium;
+            margin-bottom: $mb-1;
         }
 
         &__accordion-passo::after {
@@ -200,15 +248,7 @@
             flex: 1;
         }
 
-        &__ac-title {
-        }
-
-        &__ac-description {
-        }
-
         /* Collapse */
-        &__accordion-passo:focus {
-        }
 
         &__accordion-passo.open {
             font-weight: $font-bold;

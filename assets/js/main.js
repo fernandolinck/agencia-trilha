@@ -35,17 +35,18 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 /* Change header background */
-function scrollHeader (){
+function scrollHeader() {
     const header = document.getElementById('header')
-    if(this.scrollY >= 20) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    if (this.scrollY >= 20)
+        header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
 
 /* Scroll to the top */
-function scrollTop (){
+function scrollTop() {
     const scrollTop = document.getElementById('scroll-top')
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+    if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
 
@@ -54,18 +55,18 @@ document.querySelectorAll('.processo__accordion-passo').forEach((item) => {
     item.addEventListener('click', (event) => {
         let accCollapse = item.nextElementSibling;
 
-        if (!item.classList.contains('collapsing')){
-            
+        if (!item.classList.contains('collapsing')) {
+
         }
 
         // Open accordion item
-        if (!item.classList.contains('open')){
+        if (!item.classList.contains('open')) {
             // Remove "collapse" and add "collapsing" class to .processo__collapse (sibling)
 
             accCollapse.style.display = 'block';
             let accHeight = accCollapse.clientHeight;
 
-            setTimeout (() => {
+            setTimeout(() => {
                 accCollapse.style.height = accHeight + 'px';
                 accCollapse.style.display = '';
             }, 1);
@@ -73,7 +74,7 @@ document.querySelectorAll('.processo__accordion-passo').forEach((item) => {
             accCollapse.classList = 'processo__collapse collapsing';
 
             // After x amount of time, Remove "collapsing" class and add "open" class
-             setTimeout(() => {
+            setTimeout(() => {
                 accCollapse.classList = 'processo__collapse collapse open';
             }, 300);
         }
@@ -82,7 +83,7 @@ document.querySelectorAll('.processo__accordion-passo').forEach((item) => {
         else {
             // Remove "collapse open" from .processo__collapse, add "collapsing"
             accCollapse.classList = 'processo__collapse collapsing';
-           
+
 
             setTimeout(() => {
                 accCollapse.style.height = '0px';
@@ -94,7 +95,8 @@ document.querySelectorAll('.processo__accordion-passo').forEach((item) => {
                 accCollapse.style.height = '';
             }, 300);
         }
-    
+
         item.classList.toggle('open');
     });
 });
+

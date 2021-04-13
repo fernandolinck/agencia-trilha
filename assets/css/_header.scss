@@ -36,8 +36,8 @@
         z-index: $z-fixed;
         box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
 
-        @include breakpoint-up (large){
-            width: 45%;
+        @include breakpoint-up(large) {
+            width: 40%;
         }
     }
 
@@ -67,8 +67,14 @@
         }
     }
 
+
     &__list {
         margin-top: 5rem;
+
+        @include breakpoint-up(large) {
+            margin-left: 3rem;
+            text-align: left;
+        }
     }
 
     &__link {
@@ -85,6 +91,11 @@
         font-weight: $font-bold;
         color: $white;
         margin-bottom: 0.2rem;
+
+        @include breakpoint-up(large) {
+            margin-left: 3rem;
+            text-align: left;
+        }
     }
 
     &__info {
@@ -93,6 +104,11 @@
         font-size: 1rem;
         margin-bottom: 0.1rem;
         display: block;
+
+        @include breakpoint-up(large) {
+            margin-left: 3rem;
+            text-align: left;
+        }
     }
 
     &__email,
@@ -102,6 +118,13 @@
 
     &__email {
         margin-top: 2rem;
+    }
+
+    &__socials {
+        @include breakpoint-up(large) {
+            margin-left: 3rem;
+            text-align: left;
+        }
     }
 
     &__social {
@@ -119,6 +142,7 @@
     right: 0;
 }
 
+
 /* Scroll Menu */
 .active-link {
     position: relative;
@@ -134,8 +158,18 @@
     background-color: $white;
 }
 
-/* Scroll header */
 .scroll-header {
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+.scroll-header .nav__toggle {
+    color: $lightYellow;
+}
+
+/* Scroll header */
+/* .scroll-header {
     background-color: $white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: 0.5s ease-in-out;
@@ -147,7 +181,11 @@
     color: $darkGray;
 }
 
+.scroll-header .nav__info {
+    color: $darkGray;
+}
+
 .scroll-header .nav__menu {
     background-color: $lightYellow;
     transition: 0.5s ease-in-out;
-}
+} */
