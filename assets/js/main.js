@@ -100,3 +100,16 @@ document.querySelectorAll('.processo__accordion-passo').forEach((item) => {
     });
 });
 
+/* Swiper */
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 30,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
