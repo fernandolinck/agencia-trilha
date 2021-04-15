@@ -14,9 +14,9 @@
     }
 
     //&__data {
-        //margin-top: 0.rem;
-        //grid-template-columns: 2;
-        //justify-items: center;
+    //margin-top: 0.rem;
+    //grid-template-columns: 2;
+    //justify-items: center;
     //}
 
     &__tag {
@@ -174,7 +174,8 @@
         }
 
         &__ac-title {
-            color: $darkGray;
+            font-size: 2rem;
+            color: $darkBlue;
             margin-bottom: 2rem;
         }
 
@@ -196,11 +197,10 @@
         }
 
         &__accordion-item {
-            background-color: $lightYellow;
+            background-color: $lightGray;
             padding: $mb-2;
             border-radius: 1rem;
             margin-bottom: 1rem;
-            box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
         }
 
         &__accordion-passo {
@@ -214,10 +214,10 @@
             border: none;
             background: transparent;
             padding: 0;
-            font-size: $normal-font-size;
+            font-size: $h3-font-size;
             font-family: "Montserrat", sans-serif;
-            color: $darkGray;
-            font-weight: $font-medium;
+            color: $textBlue;
+            font-weight: $font-bold;
             margin-bottom: $mb-1;
         }
 
@@ -234,7 +234,7 @@
         }
 
         &__content {
-            color: $textGray;
+            color: $textBlue;
             line-height: 1.4;
             padding-bottom: $mb-2;
         }
