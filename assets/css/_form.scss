@@ -1,0 +1,39 @@
+.form {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &__container {
+        max-width: 80%;
+        margin: 0 auto;
+        background-color: $lightYellow;
+        border-radius: 1rem;
+        padding: 30px;
+        height: 100%;
+        width: 100%;
+
+        form {
+            display: grid;
+        }
+    }
+
+    .wrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            ". ."
+            "title form"
+            ". .";
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    &__text {
+        grid-area: title;
+    }
+
+    &__field {
+        grid-area: form;
+    }
+}
