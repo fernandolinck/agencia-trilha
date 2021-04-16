@@ -5,10 +5,10 @@
     &__container {
         max-width: 80%;
         margin: 0 auto;
-        background-color: $lightYellow;
+        background-color: $lightestYellow;
         border-radius: 1rem;
         padding: 30px;
-        height: 100%;
+        height: 450px;
         width: 100%;
 
         form {
@@ -17,14 +17,15 @@
     }
 
     .wrapper {
+        height: 100%;
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
         grid-template-areas:
-            ". ."
+            ". form"
             "title form"
-            ". .";
+            ". form";
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
@@ -33,7 +34,43 @@
         grid-area: title;
     }
 
-    &__field {
+    &__form {
         grid-area: form;
+        
+        
     }
+
+    &__message {
+        textarea {
+            width: 70%;
+            background: transparent;
+            height: 100px;
+        }
+    }
+
+    &__fields {
+        input {
+            margin: 10px 0;
+            background: transparent;
+            border: 3px solid $darkGold;
+            border-radius: 2rem;
+            padding: 10px;
+            color: $darkGold;
+        }
+
+        button {
+            
+        }
+    }
+
+    
+    
+
+    &__title {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: $darkBlue;
+        font-weight: $font-bold;
+    }
+
 }
