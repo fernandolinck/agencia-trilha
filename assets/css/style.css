@@ -21,6 +21,35 @@
   font-weight: 500;
 }
 
+.button-dark {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem 1.5rem;
+  background-color: #1a2023;
+  color: #eda41d;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+.tag {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem 1.5rem;
+  background-color: #fffaeb;
+  color: #aa730e;
+  border: 2px solid #aa730e;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
 .button:hover {
   background-color: #ffd770;
   color: white;
@@ -1048,52 +1077,64 @@ img {
 }
 
 .form__container form {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .form .wrapper {
   height: 100%;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 0.5fr 1fr 0.5fr;
-      grid-template-rows: 0.5fr 1fr 0.5fr;
-      grid-template-areas: ". form" "title form" ". form";
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
 }
 
 .form__text {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: title;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .form__form {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
-  grid-area: form;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form__form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .form__message textarea {
   width: 70%;
-  background: transparent;
+  background: #f1e6c0;
   height: 100px;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 20px;
+  color: #aa730e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .form__fields input {
   margin: 10px 0;
-  background: transparent;
-  border: 3px solid #aa730e;
+  background: #f1e6c0;
+  border: none;
   border-radius: 2rem;
   padding: 10px;
   color: #aa730e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .form__title {
@@ -1101,5 +1142,106 @@ img {
   line-height: 1.4;
   color: #40545e;
   font-weight: 700;
+}
+
+.solutions {
+  background-color: white;
+  overflow: hidden;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.solutions__tag {
+  color: #eda41d;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.solutions__title {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #1a2023;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.solutions__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.solutions__card {
+  background-color: #fffaeb;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.solutions__card:hover path {
+  fill-opacity: 1;
+}
+
+.solutions__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.solutions__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.solutions__img svg {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+  height: 70%;
+}
+
+.solutions__img svg path {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.solutions__colored:hover {
+  opacity: 1;
+}
+
+.solutions__nocolor, .solutions__colored {
+  width: 50%;
+  height: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 1rem;
+}
+
+.solutions__description {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,6 +15,7 @@ $lightGray: hsl(0, 0%, 96%);
 $textBlue: 	hsl(200, 15%, 47%);
 $darkBlue: 	hsl(200, 19%, 31%);
 $lightestYellow: hsl(44, 100%, 96%);
+$lightestYellow2: hsl(46, 64%, 85%);
 
 
 /* Font Sizes */
@@ -64,6 +65,27 @@ $z-fixed: 100;
     padding: 0.8rem 1.5rem;
     background-color: $mainYellow;
     color: $white;
+    border-radius: 2rem;
+    font-weight: $font-medium;
+}
+
+.button-dark {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: $darkGray;
+    color: $mainYellow;
+    border-radius: 2rem;
+    font-weight: $font-medium;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: $lightestYellow;
+    color: $darkGold;
+    border: 2px solid $darkGold;
     border-radius: 2rem;
     font-weight: $font-medium;
 }

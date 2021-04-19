@@ -1,0 +1,83 @@
+.solutions {
+    background-color: $white;
+    overflow: hidden;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    
+    &__tag {
+        color: $mainYellow;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        justify-self: center;
+        margin-bottom: $mb-1;
+        align-self: center;
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 1.2;
+        color: $darkGray;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__card {
+        background-color: $lightestYellow;
+        border-radius: 1rem;
+        padding: $mb-2;
+    }
+
+    &__card:hover {
+        path {
+            fill-opacity: 1;
+        }
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-self: center;
+
+        svg {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            align-self: center;
+            width: 70%;
+            height: 70%;
+
+            path {
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+
+
+    &__colored:hover {
+        opacity: 1;
+    }
+
+    &__nocolor,
+    &__colored {
+        width: 50%;
+        height: 50%;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        text-align: center;
+    }
+}

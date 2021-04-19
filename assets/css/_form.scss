@@ -12,54 +12,53 @@
         width: 100%;
 
         form {
-            display: grid;
+            display: flex;
+            flex-direction: column;
         }
     }
 
     .wrapper {
         height: 100%;
-        display: grid;
+        display: flex;
         align-items: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr 0.5fr;
-        grid-template-areas:
-            ". form"
-            "title form"
-            ". form";
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
     }
 
     &__text {
-        grid-area: title;
+        flex: 1;
     }
 
     &__form {
-        grid-area: form;
-        
-        
+        flex: 1;
+
+        button {
+            align-self: center;
+        }
     }
 
     &__message {
         textarea {
             width: 70%;
-            background: transparent;
+            background: $lightestYellow2;
             height: 100px;
+            border: none;
+            border-radius: 0.8rem;
+            padding: 20px;
+            color: $darkGold;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: $font-semibold;
         }
     }
 
     &__fields {
         input {
             margin: 10px 0;
-            background: transparent;
-            border: 3px solid $darkGold;
+            background: $lightestYellow2;
+            border: none;
             border-radius: 2rem;
             padding: 10px;
             color: $darkGold;
-        }
-
-        button {
-            
+            font-family: 'Montserrat', sans-serif;
+            font-weight: $font-semibold;
         }
     }
 
