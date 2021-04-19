@@ -235,7 +235,7 @@ img {
           align-items: center;
 }
 
-.nav__logo img {
+.nav__logo svg {
   width: 70%;
   height: 70%;
 }
@@ -781,6 +781,12 @@ img {
 }
 
 .portfolio {
+  background-color: white;
+  overflow: hidden;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 1rem;
   /* Título */
   /* Slider */
 }
@@ -793,6 +799,7 @@ img {
   -ms-grid-column-align: center;
       justify-self: center;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .portfolio__title {
@@ -1150,6 +1157,7 @@ img {
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
+  min-height: 600px;
 }
 
 .solutions__tag {
@@ -1170,7 +1178,7 @@ img {
   line-height: 1.2;
   color: #1a2023;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .solutions__cards {
@@ -1181,13 +1189,26 @@ img {
 }
 
 .solutions__card {
-  background-color: #fffaeb;
   border-radius: 1rem;
   padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.solutions__card:hover {
+  background-color: #fffaeb;
 }
 
 .solutions__card:hover path {
   fill-opacity: 1;
+}
+
+.solutions__card:hover .solutions__tags {
+  opacity: 1;
 }
 
 .solutions__data {
@@ -1224,24 +1245,38 @@ img {
 }
 
 .solutions__img svg path {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .solutions__colored:hover {
   opacity: 1;
 }
 
-.solutions__nocolor, .solutions__colored {
-  width: 50%;
-  height: 50%;
+.solutions__description {
+  text-align: center;
+}
+
+.solutions__tags {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
-.solutions__description {
-  text-align: center;
+.solutions__cards:hover .solutions__data:hover .solutions__tags,
+.solutions__cards .solutions__data--default .solutions__tags {
+  height: 7rem;
+}
+
+.solutions__tags,
+.solutions__cards:hover .solutions__tags {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

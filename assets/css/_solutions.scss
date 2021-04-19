@@ -4,7 +4,8 @@
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
-    
+    min-height: 600px;
+
     &__tag {
         color: $mainYellow;
         text-transform: uppercase;
@@ -20,7 +21,7 @@
         line-height: 1.2;
         color: $darkGray;
         text-align: center;
-        margin-bottom: 0.5rem;
+        margin-bottom: 2rem;
     }
 
     &__cards {
@@ -29,14 +30,23 @@
     }
 
     &__card {
-        background-color: $lightestYellow;
+        //background-color: $lightestYellow;
         border-radius: 1rem;
         padding: $mb-2;
+        justify-content: center;
+        display: flex;
+
+
     }
 
     &__card:hover {
+        background-color: $lightestYellow;
         path {
             fill-opacity: 1;
+        }
+
+        .solutions__tags {
+            opacity: 1;
         }
     }
 
@@ -59,25 +69,35 @@
             height: 70%;
 
             path {
-                transition: .5s ease-in-out;
+                transition: 0.5s ease-in-out;
             }
         }
     }
-
 
     &__colored:hover {
         opacity: 1;
     }
 
-    &__nocolor,
-    &__colored {
-        width: 50%;
-        height: 50%;
-        align-self: center;
-        margin-bottom: 1rem;
-    }
-
     &__description {
         text-align: center;
+    }
+
+    &__tags {
+        align-self: center;
+        margin-top: 1.5rem;
+        opacity: 0;
+        transition: .3s ease-in-out;
+    }
+
+    &__cards:hover &__data:hover &__tags,
+    &__cards &__data--default &__tags {
+        height: 7rem;
+    }
+
+    &__tags,
+    &__cards:hover &__tags {
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
     }
 }
