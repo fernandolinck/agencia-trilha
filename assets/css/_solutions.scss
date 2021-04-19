@@ -5,6 +5,7 @@
     margin: 0 auto;
     position: relative;
     min-height: 600px;
+    margin-top: 3rem;
 
     &__tag {
         color: $mainYellow;
@@ -27,6 +28,13 @@
     &__cards {
         display: flex;
         gap: 1rem;
+    }
+
+    @include breakpoint-down(medium) {
+        &__cards {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__card {
