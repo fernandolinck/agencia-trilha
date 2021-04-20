@@ -47,7 +47,7 @@
 
     }
 
-    &__card:hover {
+    &__card:hover, &__card:active {
         background-color: $lightestYellow;
         path {
             fill-opacity: 1;
@@ -82,7 +82,7 @@
         }
     }
 
-    &__colored:hover {
+    &__colored:hover, &__colored:active {
         opacity: 1;
     }
 
@@ -98,12 +98,13 @@
     }
 
     &__cards:hover &__data:hover &__tags,
+    &__cards:active &__data:active &__tags,
     &__cards &__data--default &__tags {
         height: 7rem;
     }
 
     &__tags,
-    &__cards:hover &__tags {
+    &__cards:hover &__tags, &__cards:active &__tags {
         height: 0;
         overflow: hidden;
         transition: 0.5s ease-in-out;

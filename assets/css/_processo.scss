@@ -43,6 +43,12 @@
         /* Accordion text */
         &__ac-text {
             align-self: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__button {
+            align-self: center;
         }
 
         &__info {
@@ -53,12 +59,14 @@
         &__ac-title {
             color: $darkGray;
             margin-bottom: 2rem;
+            text-align: center;
         }
 
         &__ac-description {
             color: $textGray;
             margin-bottom: 2rem;
             line-height: 1.6;
+            text-align: center;
         }
 
         /* Accordion*/
@@ -76,11 +84,11 @@
 
         &__accordion-item {
             align-self: center;
-            background-color: $lightYellow;
+            background-color: $lightGray;
             padding: $mb-2;
-            border-radius: 1rem;
+            border-radius: 10px;
             margin-bottom: 1rem;
-            box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.01);
             justify-self: center;
         }
 
@@ -91,33 +99,46 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            text-align: left;
+            text-align: center;
             border: none;
             background: transparent;
             padding: 0;
-            font-size: $normal-font-size;
+            font-size: $h3-font-size;
+            font-weight: $font-bold;
             font-family: "Montserrat", sans-serif;
-            color: $darkGray;
-            font-weight: $font-medium;
+            color: $textBlue;
             margin-bottom: $mb-1;
+            transition: 0.3s ease-in-out;
+
+            path {
+                transition: 0.3s ease-in-out;
+            }
+
+            span {
+                margin-left: -1rem;
+            }
+
         }
 
         &__accordion-passo::after {
             content: "";
             display: block;
-            width: 1.5rem;
-            height: 1.5rem;
-            background-image: url("/assets/img/bx-chevron-right.svg");
+            width: 0.7rem;
+            height: 0.7rem;
+            background-image: url("/assets/img/processochevron.svg");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center center;
             transition: transform 300ms ease-in-out;
+            //margin-right: $mb-1;
         }
 
         &__content {
-            color: $textGray;
+            color: $textBlue;
             line-height: 1.4;
             padding-bottom: $mb-2;
+            text-align: center;
+            padding-top: 1rem;
         }
 
         &__info {
@@ -134,10 +155,16 @@
 
         &__accordion-passo.open {
             font-weight: $font-bold;
+            color: $mainYellow;
+
+            path {
+                fill: #ecb21b;
+            }
         }
 
         &__accordion-passo.open::after {
             transform: rotate(90deg);
+            background-image: url("/assets/img/processochevronyellow.svg");
         }
 
         &__collapse {
@@ -199,8 +226,9 @@
         &__accordion-item {
             background-color: $lightGray;
             padding: $mb-2;
-            border-radius: 1rem;
+            border-radius: 10px;
             margin-bottom: 1rem;
+            box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.01);
         }
 
         &__accordion-passo {
@@ -219,24 +247,43 @@
             color: $textBlue;
             font-weight: $font-bold;
             margin-bottom: $mb-1;
+            transition: 0.3s ease-in-out;
+
+            //margin-left: $mb-1;
+
+            path {
+                transition: 0.3s ease-in-out;
+            }
+
+            svg {
+                margin-right: -13rem;
+                position: absolute;
+            }
+
+            span {
+                margin-left: 3.5rem;
+            }
         }
 
         &__accordion-passo::after {
             content: "";
             display: block;
-            width: 1.5rem;
-            height: 1.5rem;
-            background-image: url("/assets/img/bx-chevron-right.svg");
+            width: 0.7rem;
+            height: 0.7rem;
+            background-image: url("/assets/img/processochevron.svg");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center center;
             transition: transform 300ms ease-in-out;
+            margin-right: $mb-1;
         }
 
         &__content {
             color: $textBlue;
             line-height: 1.4;
             padding-bottom: $mb-2;
+            margin-left: 3.5rem;
+            max-width: 15rem;
         }
 
         &__info {
@@ -252,10 +299,16 @@
 
         &__accordion-passo.open {
             font-weight: $font-bold;
+            color: $mainYellow;
+
+            path {
+                fill: #ecb21b;
+            }
         }
 
         &__accordion-passo.open::after {
             transform: rotate(90deg);
+            background-image: url("/assets/img/processochevronyellow.svg");
         }
 
         &__collapse {

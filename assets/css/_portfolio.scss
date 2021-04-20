@@ -1,10 +1,14 @@
 .portfolio {
     background-color: $white;
     overflow: hidden;
-    max-width: 1024px;
     margin: 0 auto;
     position: relative;
     margin-top: $mb-2;  
+
+    &__container {
+        max-width: 64em;
+        margin: 0 auto;
+    }
 
     /* Título */
     &__tag {
@@ -52,61 +56,78 @@
             border-radius: 1rem;
             object-fit: cover;
         }
+    }
+
+    .slider-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 18rem;
+
 
         .slider-title {
-            position: absolute;
+            //position: absolute;
             color: white;
             font-size: 22px;
-            left: 0;
+            //left: 0;
             margin-left: 1rem;
             text-align: left;
             line-height: 14px;
-            bottom: 9%;
+            //bottom: 9%;
             flex: 1;
             font-weight: $font-bold;
             transition: .5s ease-in-out;
+            padding-bottom: 1.2rem;
         }
 
         .slider-tag {
-            position: absolute;
+            //position: absolute;
             color: white;
             font-size: 14px;
-            left: 0;
+            //left: 0;
             margin-left: 1rem;
             text-align: left;
-            bottom: 11%;
+            //bottom: 11%;
             flex: 1;
             font-weight: $font-semibold;
             transition: .5s ease-in-out;
+            //padding-top: 2rem;
         }
+        
 
         .slider-description {
-            position: absolute;
+            //position: absolute;
             color: white;
             font-size: 14px;
-            left: 0;
+            //left: 0;
             margin-left: 1rem;
             text-align: left;
-            bottom: 1%;
+            //bottom: 1%;
             flex: 1;
             width: 90%;
-            opacity: 0;
+           // opacity: 1;
             transition: .5s ease-in-out;
+            padding-top: .1rem;
         }
+    }
+
+    .slider-teste{
+        display: flex;
+        margin-bottom: .5rem;
     }
 
     .swiper-slide:hover {
         .slider-title {
-            bottom: 23%;
+            
         }
 
         .slider-tag {
-            bottom: 25%;
+            
         }
 
         .slider-description {
-            opacity: 1;
-            bottom: 10%;
+           opacity: 1;
+           
         }
     }
 
