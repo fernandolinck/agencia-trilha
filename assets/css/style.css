@@ -1157,13 +1157,12 @@ img {
 
 .form {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  background-color: #ffd770;
 }
 
 .form__container {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
-  background-color: #fffaeb;
   border-radius: 1rem;
   padding: 30px;
   height: 450px;
@@ -1178,6 +1177,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.01);
+          box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.01);
 }
 
 .form .wrapper {
@@ -1206,36 +1213,78 @@ img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border: none;
+  cursor: pointer;
+}
+
+.form__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 1rem;
 }
 
 .form__message textarea {
-  width: 70%;
-  background: #f1e6c0;
+  width: 23rem;
   height: 100px;
   border: none;
-  border-radius: 0.8rem;
+  background: whitesmoke;
+  border-radius: 10px;
   padding: 20px;
-  color: #aa730e;
-  font-family: 'Montserrat', sans-serif;
+  color: #40545e;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 16px;
+}
+
+.form__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .form__fields input {
-  margin: 10px 0;
-  background: #f1e6c0;
+  margin-bottom: 1rem;
+  width: 23rem;
+  background: whitesmoke;
   border: none;
-  border-radius: 2rem;
-  padding: 10px;
-  color: #aa730e;
-  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  padding: 18px;
+  color: #40545e;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 16px;
+}
+
+.form input:focus, .form textarea:focus {
+  border: solid 3px #aa730e;
+  outline: none;
 }
 
 .form__title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.4;
-  color: #40545e;
+  color: #1a2023;
   font-weight: 700;
+}
+
+.form__button:focus {
+  border: none;
+  outline: none;
 }
 
 .solutions {
