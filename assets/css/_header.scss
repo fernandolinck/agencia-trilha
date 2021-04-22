@@ -18,7 +18,7 @@
     position: relative;
     padding-left: 1rem;
     padding-right: 1rem;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     //margin: auto;
 
     &__menu {
@@ -33,7 +33,7 @@
         padding-top: 1.5rem;
         background-color: $darkGray;
         color: $white;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
         z-index: $z-fixed;
         box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
 
@@ -57,7 +57,14 @@
         cursor: pointer;
         z-index: 101;
         color: $white;
+        transition: 0.3s ease-in-out;
+
+        i {
+            transition: 0.3s ease-in-out;
+        }
     }
+
+    
 
     &__logo {
         display: flex;
@@ -68,22 +75,21 @@
             transition: fill 1s ease-in-out;
             width: 70%;
             height: 70%;
-            
+
             .white {
-                transition: .5s ease-in-out;
+                transition: 0.5s ease-in-out;
                 fill: $white;
             }
-    
+
             .text {
                 transition: 0.5s ease-in-out;
             }
-    
+
             path {
                 transition: 1s ease-in-out;
             }
         }
     }
-
 
     &__list {
         margin-top: 5rem;
@@ -159,6 +165,18 @@
     right: 0;
 }
 
+.toggle-color {
+    transition: 0.3s ease-in-out;
+    i {
+        color: $white;
+        transition: .3s ease-in-out;
+        opacity: 1;
+    }
+
+    i::before{
+        content: url(/assets/img/bx-x.svg);
+    }
+}
 
 /* Scroll Menu */
 .active-link {
@@ -178,11 +196,11 @@
 .scroll-header {
     background-color: $white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .scroll-header .nav__toggle {
-    color: $lightYellow;
+    color: $darkGray;
 }
 
 .scroll-header .nav__logo {
@@ -191,7 +209,7 @@
         transition: fill 1s ease-in-out;
 
         .white {
-            transition: .5s ease-in-out;
+            transition: 0.5s ease-in-out;
             fill: $darkGray;
         }
 

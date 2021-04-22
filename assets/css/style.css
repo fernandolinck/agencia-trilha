@@ -182,8 +182,8 @@ img {
   position: relative;
   padding-left: 1rem;
   padding-right: 1rem;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .nav__menu {
@@ -198,8 +198,8 @@ img {
   padding-top: 1.5rem;
   background-color: #1a2023;
   color: white;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   z-index: 100;
   -webkit-box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
           box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -228,6 +228,13 @@ img {
   cursor: pointer;
   z-index: 101;
   color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.nav__toggle i {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav__logo {
@@ -249,8 +256,8 @@ img {
 }
 
 .nav__logo svg .white {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   fill: white;
 }
 
@@ -342,6 +349,22 @@ img {
   right: 0;
 }
 
+.toggle-color {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.toggle-color i {
+  color: white;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 1;
+}
+
+.toggle-color i::before {
+  content: url(/assets/img/bx-x.svg);
+}
+
 /* Scroll Menu */
 .active-link {
   position: relative;
@@ -361,12 +384,12 @@ img {
   background-color: white;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .scroll-header .nav__toggle {
-  color: #ffd770;
+  color: #1a2023;
 }
 
 .scroll-header .nav__logo {
@@ -380,8 +403,8 @@ img {
 }
 
 .scroll-header .nav__logo svg .white {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   fill: #1a2023;
 }
 
