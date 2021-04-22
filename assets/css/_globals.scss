@@ -74,9 +74,11 @@ $z-fixed: 100;
     align-items: center;
     padding: 0.8rem 1.5rem;
     background-color: $darkGray;
-    color: $mainYellow;
+    color: $white;
+    font-size: 14px;
     border-radius: 2rem;
-    font-weight: $font-medium;
+    font-weight: $font-semibold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .tag {

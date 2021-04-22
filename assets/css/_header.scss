@@ -18,7 +18,7 @@
     position: relative;
     padding-left: 1rem;
     padding-right: 1rem;
-    transition: 0.5s ease-in-out;
+    transition: .2s ease-in-out;
     //margin: auto;
 
     &__menu {
@@ -33,7 +33,7 @@
         padding-top: 1.5rem;
         background-color: $darkGray;
         color: $white;
-        transition: 0.5s ease-in-out;
+        transition: .2s ease-in-out;
         z-index: $z-fixed;
         box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
 
@@ -62,10 +62,25 @@
     &__logo {
         display: flex;
         align-items: center;
+        transition: 5s ease-in-out;
 
         svg {
+            transition: fill 1s ease-in-out;
             width: 70%;
             height: 70%;
+            
+            .white {
+                transition: .5s ease-in-out;
+                fill: $white;
+            }
+    
+            .text {
+                transition: 0.5s ease-in-out;
+            }
+    
+            path {
+                transition: 1s ease-in-out;
+            }
         }
     }
 
@@ -163,7 +178,7 @@
 .scroll-header {
     background-color: $white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .scroll-header .nav__toggle {
@@ -171,11 +186,12 @@
 }
 
 .scroll-header .nav__logo {
-    transition: fill 0.5s ease-in-out;
+    transition: fill 1s ease-in-out;
     svg {
-        transition: fill 0.5s ease-in-out;
+        transition: fill 1s ease-in-out;
+
         .white {
-            transition: 0.5s ease-in-out;
+            transition: .5s ease-in-out;
             fill: $darkGray;
         }
 
@@ -185,7 +201,7 @@
         }
 
         path {
-            transition: 0.5s ease-in-out;
+            transition: 1s ease-in-out;
         }
     }
 }
