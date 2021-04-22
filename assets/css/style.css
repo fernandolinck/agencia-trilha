@@ -887,7 +887,7 @@ img {
   margin-top: 0.5rem;
 }
 
-.portfolio__title {
+.portfolio__maintitle {
   font-size: 2rem;
   line-height: 1.2;
   color: #1a2023;
@@ -900,16 +900,15 @@ img {
   width: 100%;
   text-align: center;
   font-size: 20px;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .portfolio .swiper-slide img {
@@ -920,7 +919,12 @@ img {
      object-fit: cover;
 }
 
-.portfolio .slider-info {
+.portfolio__info {
+  position: absolute;
+  text-align: left;
+  color: white;
+  padding-left: 1.2rem;
+  padding-bottom: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,61 +932,50 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  margin-top: 18rem;
+  width: 100%;
 }
 
-.portfolio .slider-info .slider-title {
+.portfolio__title {
   color: white;
-  font-size: 22px;
-  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 28px;
   text-align: left;
-  line-height: 14px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-weight: 700;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  padding-bottom: 1.2rem;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
 }
 
-.portfolio .slider-info .slider-tag {
-  color: white;
+.portfolio__cat {
+  font-weight: 700;
+  margin-bottom: 12px;
   font-size: 14px;
-  margin-left: 1rem;
-  text-align: left;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-weight: 600;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
 }
 
-.portfolio .slider-info .slider-description {
-  color: white;
+.portfolio__description {
   font-size: 14px;
-  margin-left: 1rem;
-  text-align: left;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 90%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  padding-top: .1rem;
+  width: 70%;
+  visibility: 0;
+  opacity: 0;
+  display: block;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  margin-bottom: -60px;
 }
 
-.portfolio .slider-teste {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: .5rem;
-}
-
-.portfolio .swiper-slide:hover .slider-description {
+.portfolio .swiper-slide:hover .portfolio__description {
+  visibility: 1;
   opacity: 1;
+  margin-bottom: 0px;
+}
+
+.portfolio .swiper-slide:focus .portfolio__description {
+  visibility: 1;
+  opacity: 1;
+  margin-bottom: 0px;
 }
 
 .portfolio .shade {
@@ -992,6 +985,58 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.8)));
   background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
   position: absolute;
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .portfolio .swiper-button-next,
+  .portfolio .swiper-button-prev {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .portfolio {
+    /*
+
+        .swiper-button-next:hover {
+            background-image: url(/assets/img/processochevronyellow.svg);
+            transition: 0.3s ease-in-out;
+        }
+
+        .swiper-button-prev:hover {
+            background-image: url(/assets/img/processochevronyellow.svg);
+            transform: rotate(180deg);
+            transition: 0.3s ease-in-out;
+        }
+        */
+  }
+  .portfolio .swiper-button-next {
+    background-image: url(/assets/img/processochevron.svg);
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: center;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .portfolio .swiper-button-prev {
+    background-image: url(/assets/img/processochevron.svg);
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: center;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .portfolio .swiper-button-next::after,
+  .portfolio .swiper-button-prev::after {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    display: none;
+  }
 }
 
 .footer {
