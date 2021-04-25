@@ -69,6 +69,7 @@
         align-items: center;
         line-height: 2.25;
         font-size: 0.9375rem;
+        font-weight: $font-semibold;
 
         @include breakpoint-up(large) {
             align-items: start;

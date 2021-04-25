@@ -64,8 +64,6 @@
         }
     }
 
-    
-
     &__logo {
         display: flex;
         align-items: center;
@@ -103,6 +101,11 @@
     &__link {
         font-size: 1.6rem;
         font-weight: $font-bold;
+        transition: 0.3s ease-in-out;
+    }
+
+    &__link:hover {
+        color: $lightYellow;
     }
 
     &__item {
@@ -127,11 +130,16 @@
         font-size: 1rem;
         margin-bottom: 0.1rem;
         display: block;
+        transition: 0.3s ease-in-out;
 
         @include breakpoint-up(large) {
             margin-left: 3rem;
             text-align: left;
         }
+    }
+
+    &__info:hover {
+        color: $lightBlue;
     }
 
     &__email,
@@ -151,8 +159,13 @@
     }
 
     &__social {
-        color: $lightYellow;
+        color: $white;
         font-size: 1.6rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    &__social:hover {
+        color: $lightYellow;
     }
 
     &__social:not(:last-child) {
@@ -169,16 +182,16 @@
     transition: 0.3s ease-in-out;
     i {
         color: $white;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
         opacity: 1;
     }
 
-    i::before{
+    i::before {
         content: url(/assets/img/bx-x.svg);
     }
 }
 
-/* Scroll Menu */
+/* Scroll Menu 
 .active-link {
     position: relative;
 }
@@ -192,6 +205,8 @@
     height: 3px;
     background-color: $white;
 }
+
+*/
 
 .scroll-header {
     background-color: $white;

@@ -67,6 +67,11 @@ $z-fixed: 100;
     color: $white;
     border-radius: 2rem;
     font-weight: $font-medium;
+    transition: .2s ease-in-out;
+}
+
+.button:hover {
+    background-color: $darkGold;
 }
 
 .button-dark {
@@ -90,11 +95,6 @@ $z-fixed: 100;
     border: 2px solid $darkGold;
     border-radius: 2rem;
     font-weight: $font-medium;
-}
-
-.button:hover {
-    background-color: $lightYellow;
-    color: $white;
 }
 
 /* Base Styles */

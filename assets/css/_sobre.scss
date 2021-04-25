@@ -1,0 +1,67 @@
+.sobre {
+    background-color: $darkGray;
+    margin-bottom: 2rem;
+    &__container {
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        /*display: grid;
+        grid-template-areas:
+            "text ."
+            "montanha montanha ";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr); */
+    }
+
+    &__data {
+        //grid-area: text;
+        height: 100%;
+        max-width: 64em;
+        align-self: center;
+        margin-top: 5rem;
+        flex: 1;
+    }
+
+    &__tag {
+        color: $lightYellow;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        justify-self: center;
+        margin-bottom: $mb-3;
+        margin-top: $mb-1;
+        align-self: left;
+    }
+
+    &__chamada {
+        font-size: 2rem;
+        line-height: 1.2;
+        color: $white;
+        text-align: center;
+        //margin-bottom: 0.5rem;
+        font-size: 2rem;
+        text-align: left;
+        margin-top: 0.8rem;
+        letter-spacing: -2px;
+    }
+
+    &__montanha {
+        //margin-top: -3rem;
+        overflow: hidden;
+        svg {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .firstpin,
+    .secondpin,
+    .thirdpin,
+    .forthpin,
+    .fifthpin,
+    .lastpin {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
