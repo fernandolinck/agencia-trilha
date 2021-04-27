@@ -252,8 +252,6 @@ img {
 .nav__logo svg {
   -webkit-transition: fill 1s ease-in-out;
   transition: fill 1s ease-in-out;
-  width: 70%;
-  height: 70%;
 }
 
 .nav__logo svg .white {
