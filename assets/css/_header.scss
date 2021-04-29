@@ -36,6 +36,9 @@
         transition: 0.2s ease-in-out;
         z-index: $z-fixed;
         box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @include breakpoint-up(large) {
             width: 40%;
@@ -45,10 +48,6 @@
     &__link {
         color: $white;
         font-weight: $font-medium;
-    }
-
-    &__item {
-        margin-bottom: 1.5rem;
     }
 
     &__toggle {
@@ -89,7 +88,9 @@
     }
 
     &__list {
-        margin-top: 5rem;
+       // margin-top: 5rem;
+       display: flex;
+       flex-direction: column;
 
         @include breakpoint-up(large) {
             margin-left: 3rem;
@@ -108,7 +109,7 @@
     }
 
     &__item {
-        margin-bottom: $mb-3;
+        margin-bottom: $mb-2;
     }
 
     &__title {
@@ -121,6 +122,12 @@
             margin-left: 3rem;
             text-align: left;
         }
+    }
+
+    &__infos {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
     }
 
     &__info {
@@ -147,7 +154,7 @@
     }
 
     &__email {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     &__socials {

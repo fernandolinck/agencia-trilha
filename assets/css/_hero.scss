@@ -14,14 +14,11 @@
     }
 
     &__container {
-        margin: auto;
-        position: relative;
+        display: flex;
+        width: 85%;
+        align-items: center;
+        justify-content: left;
         height: 100%;
-        display: grid;
-        grid-template-columns: 2fr 0.25fr;
-        align-content: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 
     &__subtitle,
@@ -37,6 +34,10 @@
         span {
             color: $mainYellow;
         }
+
+        @include breakpoint-up(large){
+            font-size: 3.5rem;
+        }
     }
 
     &__subtitle {
@@ -44,6 +45,10 @@
         font-weight: $font-light;
         margin-bottom: $mb-1;
         color: $white;
+
+        @include breakpoint-up(large){
+            font-size: 1.5rem;
+        }
     }
 
     &__button {
