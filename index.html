@@ -594,6 +594,27 @@
     </section>
 
     <section class="form" id="contate-nos">
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        <!--
         <div class="form__container bd-container">
             <div class="wrapper">
                 <div class="form__text">
@@ -608,13 +629,13 @@
                             <input type="phone" placeholder="seu telefone">
                         </div>
                         <div class="form__message">
-                            <textarea placeholder="conte para nós a sua ideia"></textarea>
+                            <textarea name="message" placeholder="conte para nós a sua ideia"></textarea>
                         </div>
                         <div class="form__button">
                             <button class="button-dark" type="submit">Enviar mensagem</button>
                         </div>
-                        <!-- your other form fields go here -->
-                    </form>
+                         your other form fields go here 
+                    </form> -->
 
                     <!--<form action="https://formspree.io/f/xeqvoorq" method="POST">
                         <div class="form__fields">
