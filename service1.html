@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Slider JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Agência Trilha</title>
+</head>
+
+<body>
+    <!--Scroll Top -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!-- Header -->
+    <header class="secheader" id="header">
+        <nav class="nav bd-container">
+            <a href="index.html" class="nav__logo">
+                <svg width="122.5" height="42" viewBox="0 0 175 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M58.3075 18.4337C55.1316 11.0833 49.0149 5.21631 41.3789 2.20696L48.859 0.311986C55.8423 -1.45714 62.2325 4.58453 60.3613 11.1871L58.3075 18.4337Z"
+                        fill="#ECB21B" />
+                    <path class="white" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M31.0244 60C48.1586 60 62.0487 46.5685 62.0487 30C62.0487 13.4315 48.1586 0 31.0244 0C13.8901 0 0 13.4315 0 30C0 46.5685 13.8901 60 31.0244 60ZM31.0244 48.4615C41.5685 48.4615 50.1163 40.196 50.1163 30C50.1163 19.804 41.5685 11.5385 31.0244 11.5385C20.4802 11.5385 11.9324 19.804 11.9324 30C11.9324 40.196 20.4802 48.4615 31.0244 48.4615Z"
+                        fill="#F5F6F6" />
+                    <path class="white" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M58.3075 41.5661C55.1316 48.8685 49.0149 54.6972 41.3789 57.6869L48.859 59.5694C55.8423 61.327 62.2325 55.3248 60.3613 48.7654L58.3075 41.5661Z"
+                        fill="#F5F6F6" />
+                    <path class="text"
+                        d="M83.7935 45.0193C82.4175 45.0193 81.1248 44.7713 79.9155 44.2753C78.7063 43.766 77.643 43.0757 76.7256 42.2044C75.8221 41.3197 75.1063 40.2943 74.5781 39.1282C74.0638 37.962 73.8067 36.7155 73.8067 35.3885V28.9948H71.0337V23.5259H73.8067V14.9206H79.4777V23.5259H88.1094V28.9948H79.4777V35.3885C79.4777 35.9648 79.5889 36.5077 79.8113 37.0171C80.0337 37.513 80.3395 37.9486 80.7287 38.324C81.1179 38.6993 81.5765 39.0009 82.1047 39.2287C82.6329 39.4432 83.1958 39.5504 83.7935 39.5504H88.1094V45.0193H83.7935Z"
+                        fill="#F5F6F6" />
+                    <path class="text"
+                        d="M96.9497 45.0455H91.2578V23.512H96.9484V25.3136C97.1427 25.063 97.3519 24.8467 97.5315 24.6872C98.3089 24.0608 98.892 23.6223 101.266 23.5522H106.29V29.021H101.266C100.668 29.021 100.105 29.1283 99.5767 29.3427C99.0485 29.5572 98.5898 29.8521 98.2006 30.2274C97.8115 30.6027 97.5057 31.045 97.2833 31.5544C97.0609 32.0637 96.9497 32.6066 96.9497 33.183V45.0455Z"
+                        fill="#F5F6F6" />
+                    <path class="text"
+                        d="M115.714 17.6349C115.714 18.1442 115.61 18.6201 115.401 19.0624C115.207 19.5047 114.936 19.8935 114.588 20.2286C114.241 20.5502 113.831 20.8116 113.358 21.0127C112.899 21.2003 112.406 21.2942 111.878 21.2942C111.349 21.2942 110.849 21.2003 110.377 21.0127C109.918 20.8116 109.515 20.5502 109.167 20.2286C108.834 19.8935 108.563 19.5047 108.354 19.0624C108.16 18.6201 108.062 18.1442 108.062 17.6349C108.062 17.1389 108.16 16.6698 108.354 16.2275C108.563 15.7717 108.834 15.383 109.167 15.0613C109.515 14.7262 109.918 14.4648 110.377 14.2772C110.849 14.0761 111.349 13.9756 111.878 13.9756C112.406 13.9756 112.899 14.0761 113.358 14.2772C113.831 14.4648 114.241 14.7262 114.588 15.0613C114.936 15.383 115.207 15.7717 115.401 16.2275C115.61 16.6698 115.714 17.1389 115.714 17.6349ZM114.734 45.0193H109V23.4857H114.734V45.0193Z"
+                        fill="#F5F6F6" />
+                    <path class="text" d="M124.825 45.0193H119.092V15.8521L124.825 14.9206V45.0193Z" fill="#F5F6F6" />
+                    <path class="text"
+                        d="M134.875 45.0193H129.183V15.8521L134.875 14.9206V24.4307C135.556 23.9348 136.258 23.5863 136.98 23.3852C137.703 23.1707 138.44 23.0635 139.19 23.0635C140.566 23.0635 141.859 23.3182 143.068 23.8275C144.278 24.3235 145.327 25.0138 146.217 25.8984C147.12 26.7697 147.829 27.7951 148.343 28.9747C148.871 30.1408 149.136 31.3874 149.136 32.7144V45.0193H143.444V32.7144C143.444 32.1514 143.332 31.622 143.11 31.126C142.888 30.6167 142.582 30.1743 142.193 29.799C141.804 29.4237 141.352 29.1288 140.837 28.9143C140.323 28.6999 139.774 28.5926 139.19 28.5926C138.593 28.5926 138.03 28.6999 137.502 28.9143C136.973 29.1288 136.515 29.4237 136.126 29.799C135.736 30.1743 135.431 30.6167 135.208 31.126C134.986 31.622 134.875 32.1514 134.875 32.7144V45.0193Z"
+                        fill="#F5F6F6" />
+                    <path class="text"
+                        d="M174.822 45.0193H169.121V43.64C168.638 43.9412 168.134 44.2133 167.608 44.4563C166.941 44.7512 166.253 44.9857 165.544 45.16C164.849 45.3342 164.14 45.4214 163.417 45.4214C161.847 45.4214 160.366 45.1667 158.976 44.6573C157.6 44.148 156.391 43.4108 155.349 42.4457C154.32 41.4672 153.507 40.2742 152.909 38.8668C152.312 37.4594 152.013 35.8576 152.013 34.0615C152.013 32.386 152.312 30.8512 152.909 29.4572C153.507 28.0498 154.32 26.8434 155.349 25.8381C156.391 24.8328 157.6 24.0554 158.976 23.5058C160.366 22.9429 161.847 22.6614 163.417 22.6614C164.14 22.6614 164.856 22.7485 165.565 22.9228C166.274 23.097 166.962 23.3383 167.629 23.6466C168.147 23.886 169.121 24.462 169.121 24.462V23.5259H174.822V45.0193ZM169.088 34.0615C169.088 33.3109 168.936 32.587 168.63 31.89C168.338 31.1796 167.935 30.5563 167.42 30.0202C166.906 29.4706 166.302 29.035 165.607 28.7133C164.925 28.3782 164.196 28.2106 163.417 28.2106C162.639 28.2106 161.902 28.338 161.207 28.5926C160.526 28.8473 159.929 29.2226 159.414 29.7186C158.914 30.2145 158.518 30.8311 158.226 31.5683C157.934 32.2922 157.788 33.1232 157.788 34.0615C157.788 34.9998 157.934 35.8375 158.226 36.5747C158.518 37.2985 158.914 37.9084 159.414 38.4044C159.929 38.9003 160.526 39.2756 161.207 39.5303C161.902 39.785 162.639 39.9123 163.417 39.9123C164.196 39.9123 164.925 39.7515 165.607 39.4298C166.302 39.0947 166.906 38.6591 167.42 38.1229C167.935 37.5733 168.338 36.95 168.63 36.253C168.936 35.5426 169.088 34.8121 169.088 34.0615Z"
+                        fill="#F5F6F6" />
+                    <path class="text" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M115.702 17.6355C115.702 18.1448 115.598 18.6207 115.389 19.063C115.195 19.5053 114.924 19.894 114.576 20.2291C114.229 20.5508 113.819 20.8122 113.346 21.0133C112.887 21.2009 112.394 21.2948 111.866 21.2948C111.338 21.2948 110.837 21.2009 110.365 21.0133C109.906 20.8122 109.503 20.5508 109.155 20.2291C108.822 19.894 108.551 19.5053 108.342 19.063C108.148 18.6207 108.05 18.1448 108.05 17.6355C108.05 17.1395 108.148 16.6704 108.342 16.2281C108.551 15.7723 108.822 15.3836 109.155 15.0619C109.503 14.7268 109.906 14.4654 110.365 14.2778C110.837 14.0767 111.338 13.9762 111.866 13.9762C112.394 13.9762 112.887 14.0767 113.346 14.2778C113.819 14.4654 114.229 14.7268 114.576 15.0619C114.924 15.3836 115.195 15.7723 115.389 16.2281C115.598 16.6704 115.702 17.1395 115.702 17.6355Z"
+                        fill="#ECB21B" />
+                </svg>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#início" class="nav__link active-link">Início</a></li>
+                    <li class="nav__item"><a href="#soluções" class="nav__link active-lin">Soluções</a></li>
+                    <li class="nav__item"><a href="#metodologia" class="nav__link active-lin">Metodologia</a></li>
+                    <li class="nav__item"><a href="#sobre" class="nav__link active-lin">Sobre</a></li>
+                    <li class="nav__item"><a href="#portfólio" class="nav__link active-lin">Portfólio</a></li>
+                    <li class="nav__item"><a href="#contate-nos" class="nav__link active-lin">Contate-nos</a></li>
+
+                </ul>
+
+                <div class="nav__infos">
+                    <div class="nav__email">
+                        <div class="nav__title">e-mail</div>
+                        <a href="mailto:trilha@digital.com" class="nav__info">trilha@digital.com</a>
+
+                    </div>
+                    <div class="nav__telefone">
+                        <div class="nav__title">telefone</div>
+                        <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank"
+                            class="nav__info">(51)99944-9070</a>
+                        <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank"
+                            class="nav__info">(51)99944-9072</a>
+                    </div>
+                </div>
+
+                <div class="nav__socials">
+                    <a href="https://www.facebook.com/trilhadigitalagencia" target="_blank" class="nav__social"><i
+                            class='bx bxl-facebook-square'></i></a>
+                    <a href="https://www.instagram.com/agenciatrilhadigital_/" target="_blank" class="nav__social"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="#" target="_blank" class="nav__social"><i class='bx bxl-linkedin-square'></i></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank" class="nav__social"><i
+                            class='bx bxl-whatsapp'></i></i></a>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main">
+        <div>
+            <div>
+                <section class="hero" id="início">
+                    <img src="./assets/img/hero-test-gradient-2.png" alt="" class="hero__bg">
+
+                    <div class="hero__container bd-container">
+                        <div class="hero__data">
+                            <h1 class="hero__title">Criação de Sites </br>
+                            </h1>
+                            <h2 class="hero__subtitle">Sites feitos do zero pensados especialmente
+                                </br>para seu negócio.</h2>
+
+                            <a href="#" class="hero__button button">Tenho interesse!</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+
+    <section class="form" id="contate-nos">
+        <div class="form__container bd-container">
+            <div class="wrapper">
+                <div class="form__text">
+                    <h2 class="form__title">Chega de falar de nós! </br>Vamos falar sobre você.</h2>
+                    <p class="form__subtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea vitae
+                        quam aliquid aspernatur quia?</p>
+                </div>
+                <div class="form__form">
+                    <form name="trilhaform" method="POST" data-netlify="true">
+                        <div class="form__fields">
+                            <label><input type="email" name="email" placeholder="e-mail"></label>
+                            <label><input type="phone" name="number" placeholder="seu telefone"></label>
+                        </div>
+                        <div class="form__message">
+                            <textarea name="message" placeholder="conte para nós a sua ideia"></textarea>
+                        </div>
+                        <div class="form__button">
+                            <button class="button-dark" type="submit">Enviar mensagem</button>
+                        </div>
+                    </form>
+
+                    <!--<form action="https://formspree.io/f/xeqvoorq" method="POST">
+                        <div class="form__fields">
+                            <input type="email" placeholder="e-mail">
+                            <input type="phone" placeholder="seu telefone">
+                        </div>
+                        <div class="form__message">
+                            <textarea placeholder="conte para nós a sua ideia"></textarea>
+                        </div>
+                        <div class="form__button">
+                            <button class="button-dark" type="submit">Enviar mensagem</button>
+                        </div>
+                         your other form fields go here 
+                    </form> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <a class="footer__logo" href="#">
+                <img src="/assets/img/icon-trilha-white.svg" alt="logo">
+            </a>
+
+            <div class="footer__social">
+                <a href="https://www.facebook.com/trilhadigitalagencia"><i class='bx bxl-facebook-square'></i></a>
+                <a href="https://www.instagram.com/agenciatrilhadigital_/"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5551981844464"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+
+            <div class="footer__links col1">
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Soluções</a>
+            </div>
+
+            <div class="footer__links col2">
+                <a href="#">Portfólio</a>
+                <a href="#">Contate-nos</a>
+                <a href="#">Parceiros</a>
+            </div>
+
+            <div class="footer__cta">
+                <a href="#" class="button">Ganhe um diagnóstico!</a>
+            </div>
+
+            <div class="footer__copyright">
+                © 2021 Agência Trilha · Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+
+    <!--<footer class="footer">
+        <div class="footer__container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <h4>Endereço</h4>
+                    <ul>
+                        <li><a href="#" class="footer__info">R. Doutor Luís Bastos do Prado, 942 </br> Centro, Gravataí-RS </br>
+                                940020-010</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Telefones</h4>
+                    <ul>
+                        <li><a href="#" class="footer__info">(51)99944-9070</a></li>
+                        <li><a href="#" class="footer__info">(51)99944-9072</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>E-Mail</h4>
+                    <ul>
+                        <li><a href="#" class="footer__info">trilha@digital.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Redes sociais</h4>
+                    <div class="footer__socials">
+                        <a href="#" class="nav__social"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="#" class="nav__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="nav__social"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#" class="nav__social"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+
+
+
+
+
+    <!-- Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

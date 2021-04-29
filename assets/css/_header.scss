@@ -9,6 +9,17 @@
     transition: 0.5s ease-in-out;
 }
 
+.secheader {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-tooltip;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    //background-color: $darkGray;
+}
+
 /* Nav */
 .nav {
     height: $header-height;

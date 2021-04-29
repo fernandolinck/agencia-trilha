@@ -159,3 +159,4 @@ tl.to(".firstpin", {opacity: 1, delay: 1, duration: .5, y: 0})
   .to(".fifthpin", {opacity: 1, duration: .5, y: 0})
   .to(".lastpin", {opacity: 1, duration: .5, y: 0})
 
+/* Site service page */

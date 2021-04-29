@@ -6,7 +6,7 @@
     position: relative;
     min-height: 600px;
     margin-top: 6rem;
-    
+
 
     &__tag {
         color: $mainYellow;
@@ -44,11 +44,11 @@
         padding: $mb-2;
         justify-content: center;
         display: flex;
-
-
+        cursor: pointer;
     }
 
-    &__card:hover, &__card:active {
+    &__card:hover,
+    &__card:active {
         background-color: $lightestYellow;
         path {
             fill-opacity: 1;
@@ -83,19 +83,22 @@
         }
     }
 
-    &__colored:hover, &__colored:active {
+    &__colored:hover,
+    &__colored:active {
         opacity: 1;
     }
 
     &__description {
         text-align: center;
+        text-decoration: none;
+        color: $darkGray;
     }
 
     &__tags {
         align-self: center;
         margin-top: 1.5rem;
         opacity: 0;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 
     &__cards:hover &__data:hover &__tags,
@@ -105,7 +108,8 @@
     }
 
     &__tags,
-    &__cards:hover &__tags, &__cards:active &__tags {
+    &__cards:hover &__tags,
+    &__cards:active &__tags {
         height: 0;
         overflow: hidden;
         transition: 0.5s ease-in-out;

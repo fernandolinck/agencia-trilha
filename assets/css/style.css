@@ -168,6 +168,19 @@ img {
   transition: 0.5s ease-in-out;
 }
 
+.secheader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 /* Nav */
 .nav {
   height: 5rem;
@@ -1542,6 +1555,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .solutions__card:hover, .solutions__card:active {
@@ -1600,6 +1614,8 @@ img {
 
 .solutions__description {
   text-align: center;
+  text-decoration: none;
+  color: #1a2023;
 }
 
 .solutions__tags {
@@ -1608,8 +1624,8 @@ img {
       align-self: center;
   margin-top: 1.5rem;
   opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .solutions__cards:hover .solutions__data:hover .solutions__tags,
@@ -1619,7 +1635,8 @@ img {
 }
 
 .solutions__tags,
-.solutions__cards:hover .solutions__tags, .solutions__cards:active .solutions__tags {
+.solutions__cards:hover .solutions__tags,
+.solutions__cards:active .solutions__tags {
   height: 0;
   overflow: hidden;
   -webkit-transition: 0.5s ease-in-out;
