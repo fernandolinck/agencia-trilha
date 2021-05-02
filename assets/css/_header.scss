@@ -27,8 +27,9 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 85%;
+    //padding-left: 1rem;
+    //padding-right: 1rem;
     transition: 0.2s ease-in-out;
     //margin: auto;
 
@@ -81,7 +82,6 @@
 
         svg {
             transition: fill 1s ease-in-out;
-            
 
             .white {
                 transition: 0.5s ease-in-out;
@@ -99,9 +99,9 @@
     }
 
     &__list {
-       // margin-top: 5rem;
-       display: flex;
-       flex-direction: column;
+        // margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
 
         @include breakpoint-up(large) {
             margin-left: 3rem;
