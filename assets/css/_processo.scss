@@ -4,6 +4,7 @@
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
+    margin-top: 2rem;
 
     &__container {
         margin-top: 1rem;
@@ -44,6 +45,11 @@
             align-self: center;
         }
 
+        &__tag {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
         &__info {
             margin: 2rem;
             display: flex;
@@ -51,7 +57,7 @@
 
         &__ac-title {
             color: $darkGray;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             text-align: center;
         }
 

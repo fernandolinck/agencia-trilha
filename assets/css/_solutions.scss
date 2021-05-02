@@ -5,8 +5,11 @@
     margin: 0 auto;
     position: relative;
     min-height: 600px;
-    margin-top: 6rem;
+    margin-top: 4rem;
 
+    @include breakpoint-down(medium) {
+        width: 85%;
+    }
 
     &__tag {
         color: $mainYellow;
@@ -45,7 +48,15 @@
         justify-content: center;
         display: flex;
         cursor: pointer;
+
+        @include breakpoint-down(medium) {
+            background-color: $lightestYellow;
+            path {
+                fill-opacity: 1;
+            }
+        }
     }
+
 
     &__card:hover,
     &__card:active {

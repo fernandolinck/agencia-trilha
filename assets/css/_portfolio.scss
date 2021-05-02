@@ -3,8 +3,8 @@
     overflow: hidden;
     margin: 0 auto;
     position: relative;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 
     &__container {
         max-width: 64em;
@@ -61,8 +61,7 @@
         width: 100%;
     }
 
-    &__static {
-    }
+    
 
     &__title {
         color: $white;

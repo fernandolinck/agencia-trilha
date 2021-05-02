@@ -142,11 +142,11 @@ gsap.from('.hero__data', {opacity: 0, duration:1, delay:.4, y:-20})
 
 const tl = gsap.timeline({
     scrollTrigger: {
-        trigger: ".montanhatrilha"
+        trigger: ".leftcloud"
     }
 });
 
-tl.to(".leftcloud, .rightcloud", {opacity: 1, delay: 1, duration: 1, x: 0})
+tl.to(".leftcloud, .rightcloud", {opacity: 1, delay: 1.8, duration: 1, x: 0})
   .to(".firstpin", {opacity: 1, duration: .5, y: 0})
   .to(".secondpin", {opacity: 1, duration: .5, y: 0})
   .to(".thirdpin", {opacity: 1, duration: .5, y: 0})

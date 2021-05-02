@@ -3,8 +3,12 @@
     background-color: $lightYellow;
     height: 28em;
 
+    @include breakpoint-down(medium) {
+        height: 100%;
+    }
+
     &__container {
-        max-width: 80%;
+        width: 85%;
         margin: 0 auto;
         border-radius: 1rem;
         padding: 30px;
@@ -33,15 +37,24 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
 
-        @include breakpoint-down(small) {
+        @include breakpoint-down(medium) {
             flex-direction: column;
             margin-bottom: 1rem;
+            align-items: center;
+            padding: 2rem;
+            position: relative;
+            justify-content: center;
         }
     }
 
     &__text {
         flex: 1;
         align-items: right;
+
+        @include breakpoint-down(medium) {
+            text-align: center;
+            align-items: center;
+        }
     }
 
     &__form {
@@ -115,8 +128,8 @@
         letter-spacing: -2px;
         text-align: right;
 
-        @include breakpoint-down(small) {
-            text-align: left;
+        @include breakpoint-down(medium) {
+            text-align: center;
             margin-top: 1.5rem;
         }
     }
@@ -126,8 +139,8 @@
         align-self: right;
         margin-top: 1rem;
 
-        @include breakpoint-down(small) {
-            text-align: left;
+        @include breakpoint-down(medium) {
+            text-align: center;
         }
     }
 
