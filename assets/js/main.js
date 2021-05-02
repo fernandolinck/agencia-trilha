@@ -138,13 +138,7 @@ var swiper = new Swiper('.swiper-container', {
 
 /* GSAP Animations */
 gsap.from('.hero__data', {opacity: 0, duration:1, delay:.4, y:-20})
-gsap.to('.firstpin', {
-    scrollTrigger: '.firstpin',
-    opacity: 1,
-    duration: .5,
-    delay: 1,
-    y: 0
-})
+
 
 const tl = gsap.timeline({
     scrollTrigger: {
@@ -152,11 +146,13 @@ const tl = gsap.timeline({
     }
 });
 
-tl.to(".firstpin", {opacity: 1, delay: 1, duration: .5, y: 0})
+tl.to(".leftcloud, .rightcloud", {opacity: 1, delay: 1, duration: .5, x: 0})
+  .to(".firstpin", {opacity: 1, duration: .5, y: 0})
   .to(".secondpin", {opacity: 1, duration: .5, y: 0})
   .to(".thirdpin", {opacity: 1, duration: .5, y: 0})
   .to(".forthpin", {opacity: 1, duration: .5, y: 0})
   .to(".fifthpin", {opacity: 1, duration: .5, y: 0})
+  .to(".sixthpin", {opacity: 1, duration: .5, y: 0})
   .to(".lastpin", {opacity: 1, duration: .5, y: 0})
 
 /* Site service page */

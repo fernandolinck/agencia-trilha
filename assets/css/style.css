@@ -1653,7 +1653,7 @@ img {
 }
 
 .sobre__container {
-  height: 30em;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1675,10 +1675,11 @@ img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: absolute;
 }
 
 .sobre__tag {
@@ -1706,16 +1707,21 @@ img {
   letter-spacing: -2px;
 }
 
-.sobre__montanha {
-  overflow: hidden;
+.sobre__white {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  position: absolute;
 }
 
 .sobre__montanha svg {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .sobre .firstpin,
@@ -1723,9 +1729,22 @@ img {
 .sobre .thirdpin,
 .sobre .forthpin,
 .sobre .fifthpin,
+.sobre .sixthpin,
 .sobre .lastpin {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
+  opacity: 0;
+}
+
+.sobre .rightcloud {
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
+  opacity: 0;
+}
+
+.sobre .leftcloud {
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
   opacity: 0;
 }
 
@@ -1943,9 +1962,5 @@ img {
 .approach__description {
   font-size: 0.9rem;
   line-height: 1.4;
-}
-
-.spin {
-  background-color: #1a2023;
 }
 /*# sourceMappingURL=style.css.map */
