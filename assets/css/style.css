@@ -1772,6 +1772,21 @@ img {
   }
 }
 
+.sobre__white2 {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  background-color: white;
+  margin-top: -.2rem;
+  position: absolute;
+}
+
+@media (max-width: 87.4375em) {
+  .sobre__white2 {
+    height: 3rem;
+  }
+}
+
 .sobre__montanha svg {
   height: 100%;
   width: 100%;
