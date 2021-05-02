@@ -571,6 +571,8 @@ img {
 }
 
 .processo__container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   position: relative;
   height: 100%;
   -ms-grid-rows: (max-content)[3];
@@ -579,6 +581,7 @@ img {
   -ms-flex-line-pack: center;
       align-content: center;
   row-gap: 1rem;
+  width: 85%;
 }
 
 .processo__tag {
@@ -1730,6 +1733,7 @@ img {
   height: 100vh;
   position: relative;
   margin: auto;
+  margin-bottom: 3rem;
 }
 
 .service__bg {
@@ -1808,38 +1812,69 @@ img {
   margin-top: 0.5rem;
 }
 
-.sobreservice {
-  background-color: white;
-  overflow: hidden;
-  max-width: 1024px;
-  margin: 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  position: relative;
+/*.sobreservice {
+    background-color: $white;
+    overflow: hidden;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    position: relative;
+    width: 85%;
+
+    &__arte {
+        height: 100%;
+        width: 100%;
+        flex: 0.8;
+    }
+
+    &__container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        row-gap: 1rem;
+    }
+
+    &__ac-text {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+        flex: 1.2;
+    }
+
+    &__tag {
+        margin-bottom: 1rem;
+        color: $mainYellow;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: $mb-2;
+    }
+
+    &__ac-title {
+        font-size: 2rem;
+        color: $darkBlue;
+        margin-bottom: 2rem;
+    }
+
+    &__ac-description {
+        color: $textGray;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+        text-align: right;
+    }
+} */
+.approach {
+  background-color: #98b4c3;
+  margin-top: 3rem;
 }
 
-.sobreservice__arte {
+.approach__container {
+  width: 85%;
   height: 100%;
-  width: 100%;
-  -webkit-box-flex: 0.8;
-      -ms-flex: 0.8;
-          flex: 0.8;
-}
-
-.sobreservice__container {
-  position: relative;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  row-gap: 1rem;
-}
-
-.sobreservice__ac-text {
-  -ms-flex-item-align: center;
-      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1847,36 +1882,65 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
 }
 
-.sobreservice__tag {
-  margin-bottom: 1rem;
-  color: #eda41d;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
+.approach__data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+  gap: 1.5rem;
 }
 
-.sobreservice__ac-title {
+@media (max-width: 63.9375em) {
+  .approach__data {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .approach__data {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.approach__title {
   font-size: 2rem;
   color: #40545e;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.sobreservice__ac-description {
-  color: #7e7c7c;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-  text-align: right;
+.approach__item {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+}
+
+.approach__tag {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: #40545e;
+  margin-bottom: 1rem;
+}
+
+.approach__subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #40545e;
+  margin-bottom: 1rem;
+}
+
+.approach__description {
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 /*# sourceMappingURL=style.css.map */
