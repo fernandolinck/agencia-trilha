@@ -1166,13 +1166,15 @@ img {
 .footer {
   background-color: #1a2023;
   color: white;
-  padding: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   text-align: center;
+  width: 100%;
 }
 
 @media (min-width: 64em) {
   .footer .footer__container {
-    width: 1024px;
+    width: 85%;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
@@ -1344,7 +1346,7 @@ img {
 }
 
 .form__container {
-  min-width: 1024px;
+  width: 85%;
   margin: 0 auto;
   border-radius: 1rem;
   height: 450px;
