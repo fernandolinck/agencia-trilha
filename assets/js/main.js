@@ -146,7 +146,7 @@ const tl = gsap.timeline({
     }
 });
 
-tl.to(".leftcloud, .rightcloud", {opacity: 1, delay: 1, duration: .5, x: 0})
+tl.to(".leftcloud, .rightcloud", {opacity: 1, delay: 1, duration: 1, x: 0})
   .to(".firstpin", {opacity: 1, duration: .5, y: 0})
   .to(".secondpin", {opacity: 1, duration: .5, y: 0})
   .to(".thirdpin", {opacity: 1, duration: .5, y: 0})
