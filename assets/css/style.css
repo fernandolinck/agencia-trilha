@@ -1870,6 +1870,7 @@ img {
 .approach {
   background-color: #98b4c3;
   margin-top: 3rem;
+  margin-bottom: -2rem;
 }
 
 .approach__container {
@@ -1942,5 +1943,9 @@ img {
 .approach__description {
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.spin {
+  background-color: #1a2023;
 }
 /*# sourceMappingURL=style.css.map */
