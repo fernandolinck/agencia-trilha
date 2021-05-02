@@ -1172,6 +1172,7 @@ img {
 
 @media (min-width: 64em) {
   .footer .footer__container {
+    width: 1024px;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
