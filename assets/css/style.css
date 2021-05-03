@@ -570,6 +570,12 @@ img {
   margin-top: 2rem;
 }
 
+@media (max-width: 63.9375em) {
+  .processo {
+    width: 85%;
+  }
+}
+
 .processo__container {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -610,6 +616,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 3rem;
   }
   .processo__button {
     -ms-flex-item-align: center;
@@ -621,7 +631,6 @@ img {
     margin-top: 1rem;
   }
   .processo__info {
-    margin: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -646,6 +655,9 @@ img {
     width: 100%;
     margin-right: 2rem;
     margin-bottom: 2rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .processo__accordion-item {
     -ms-flex-item-align: center;
@@ -2080,5 +2092,77 @@ img {
 .approach__description {
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.formpage {
+  background-color: #1a2023;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.formpage__formdata {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75%;
+  max-width: 364px;
+  padding: 2rem;
+  background: white;
+  color: #0e1e25;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.16);
+          box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.16);
+}
+
+.formpage__formthanks {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.formpage__description {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.formpage__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formpage__formbutton {
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 24px;
+  color: #eda41d;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */

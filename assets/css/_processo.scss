@@ -6,6 +6,11 @@
     position: relative;
     margin-top: 2rem;
 
+    @include breakpoint-down(medium){
+        width: 85%;
+    }
+
+
     &__container {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -39,6 +44,8 @@
             align-self: center;
             display: flex;
             flex-direction: column;
+            order: 1;
+            margin-bottom: 3rem;
         }
 
         &__button {
@@ -51,7 +58,7 @@
         }
 
         &__info {
-            margin: 2rem;
+            //margin: 2rem;
             display: flex;
         }
 
@@ -79,6 +86,7 @@
             width: 100%;
             margin-right: 2rem;
             margin-bottom: 2rem;
+            order: 2;
         }
 
         &__accordion-item {
@@ -186,6 +194,7 @@
 
     @include breakpoint-up(medium) {
         /* Accordion text */
+
 
         &__data {
             margin-top: 3rem;

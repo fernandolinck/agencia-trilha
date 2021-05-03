@@ -1,0 +1,52 @@
+.formpage {
+    background-color: $darkGray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    &__formdata {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        max-width: 364px;
+        padding: 2rem;
+        background: white;
+        color: rgb(14, 30, 37);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.16);
+        
+    }
+
+    &__formthanks {
+        margin: 0;
+        margin-bottom: $mb-1;
+        font-size: 22px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__description {
+        margin-bottom: $mb-1;
+        text-align: center;
+    }
+
+    &__back {
+        display: flex;
+        justify-content: center;
+        //margin-right: 1rem;
+    }
+
+    &__formbutton {
+        margin: 0;
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 24px;
+        color: $mainYellow;
+        align-self: center;
+    }
+}
