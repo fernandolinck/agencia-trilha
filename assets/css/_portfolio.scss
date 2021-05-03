@@ -5,6 +5,10 @@
     position: relative;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    
+    @include breakpoint-up(large){
+        width: 85%;
+    }
 
     &__container {
         max-width: 64em;
@@ -61,6 +65,7 @@
         width: 100%;
     }
 
+
     
 
     &__title {
@@ -88,7 +93,7 @@
         display: block;
         transition: 0.3s ease-in-out;
         overflow: hidden;
-        margin-bottom: -60px;
+        margin-bottom: -50px;
     }
 
     .swiper-slide:hover {

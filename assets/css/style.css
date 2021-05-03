@@ -1007,6 +1007,12 @@ img {
   /* Slider */
 }
 
+@media (min-width: 64em) {
+  .portfolio {
+    width: 85%;
+  }
+}
+
 .portfolio__container {
   max-width: 64em;
   margin: 0 auto;
@@ -1099,7 +1105,7 @@ img {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   overflow: hidden;
-  margin-bottom: -60px;
+  margin-bottom: -50px;
 }
 
 .portfolio .swiper-slide:hover .portfolio__description {
