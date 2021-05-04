@@ -1,8 +1,6 @@
 # agencia-trilha
 Agência Trilha Website
 
-kk
-
 ## Subheader
 
-sei la
+Projeto de desenvolvimento do website da agência de Marketing Digital Trilha.
