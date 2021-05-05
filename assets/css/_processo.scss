@@ -83,6 +83,7 @@
         }
 
         &__accordion {
+            display: flex;
             width: 100%;
             margin-right: 2rem;
             margin-bottom: 2rem;
@@ -220,7 +221,7 @@
         &__ac-title {
             font-size: 2rem;
             color: $darkBlue;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
         &__ac-description {
@@ -237,7 +238,10 @@
         }
 
         &__accordion {
+            display: flex;
+            flex-direction: column;
             margin-right: 2rem;
+            min-height: 100%;
         }
 
         &__accordion-item {
