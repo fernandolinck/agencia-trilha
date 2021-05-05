@@ -63,10 +63,23 @@
 
     &__form {
         flex: 1;
+
+
         button {
             align-self: center;
             border: none;
             cursor: pointer;
+
+            @include breakpoint-down(small){
+                align-self: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__button {
+        @include breakpoint-down(small){
+            align-self: center;
         }
     }
 
@@ -82,9 +95,9 @@
             height: 100px;
             border: none;
             background: $lightGray;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 20px;
-            color: $darkBlue;
+            color: $textBlue;
             font-family: "Montserrat", sans-serif;
             font-weight: $font-semibold;
             font-size: 16px;
@@ -101,6 +114,9 @@
 
         @include breakpoint-down(small) {
             margin-top: -1.5rem;
+            flex-direction: column;
+            margin-bottom: .5rem;
+            align-items: center;
         }
 
         input {
@@ -108,9 +124,9 @@
             width: 12rem;
             background: $lightGray;
             border: none;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 18px;
-            color: $darkBlue;
+            color: $textBlue;
             font-family: "Montserrat", sans-serif;
             font-weight: $font-semibold;
             font-size: 16px;
@@ -142,6 +158,10 @@
         text-align: right;
         align-self: right;
         margin-top: 1rem;
+        text-decoration: none;
+        color: $darkGray;
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
 
         @include breakpoint-down(medium) {
             text-align: center;

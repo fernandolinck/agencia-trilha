@@ -71,7 +71,7 @@ $z-fixed: 100;
 }
 
 .button:hover {
-    background-color: $darkGold;
+    background-color: $textBlue;
 }
 
 .button-dark {
@@ -84,6 +84,11 @@ $z-fixed: 100;
     border-radius: 2rem;
     font-weight: $font-semibold;
     font-family: 'Montserrat', sans-serif;
+    transition: .2s ease-in-out;
+}
+
+.button-dark:hover {
+    background-color: $textBlue;
 }
 
 .tag {

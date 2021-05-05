@@ -5,6 +5,7 @@
     margin: 0 auto;
     position: relative;
     margin-top: 2rem;
+    margin-bottom: 6rem;
 
     @include breakpoint-down(medium){
         width: 85%;
@@ -83,7 +84,6 @@
         }
 
         &__accordion {
-            display: flex;
             width: 100%;
             margin-right: 2rem;
             margin-bottom: 2rem;
@@ -220,7 +220,7 @@
 
         &__ac-title {
             font-size: 2rem;
-            color: $darkBlue;
+            color: $darkGray;
             margin-bottom: 1rem;
         }
 
@@ -323,7 +323,7 @@
             color: $mainYellow;
 
             path {
-                fill: #ecb21b;
+                fill: $mainYellow;
             }
         }
 

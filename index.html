@@ -61,39 +61,41 @@
             </a>
 
             <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#início" class="nav__link active-link">Início</a></li>
-                    <li class="nav__item"><a href="#soluções" class="nav__link active-lin">Soluções</a></li>
-                    <li class="nav__item"><a href="#metodologia" class="nav__link active-lin">Metodologia</a></li>
-                    <li class="nav__item"><a href="#sobre" class="nav__link active-lin">Sobre</a></li>
-                    <li class="nav__item"><a href="#portfólio" class="nav__link active-lin">Portfólio</a></li>
-                    <li class="nav__item"><a href="#contate-nos" class="nav__link active-lin">Contate-nos</a></li>
+                <div class="nav__wrapper">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#início" class="nav__link active-link">Início</a></li>
+                        <li class="nav__item"><a href="#soluções" class="nav__link active-lin">Soluções</a></li>
+                        <li class="nav__item"><a href="#metodologia" class="nav__link active-lin">Metodologia</a></li>
+                        <li class="nav__item"><a href="#sobre" class="nav__link active-lin">Sobre</a></li>
+                        <li class="nav__item"><a href="#portfólio" class="nav__link active-lin">Portfólio</a></li>
+                        <li class="nav__item"><a href="#contate-nos" class="nav__link active-lin">Contate-nos</a></li>
 
-                </ul>
+                    </ul>
 
-                <div class="nav__infos">
-                    <div class="nav__email">
-                        <div class="nav__title">e-mail</div>
-                        <a href="mailto:trilha@digital.com" class="nav__info">trilha@digital.com</a>
+                    <div class="nav__infos">
+                        <div class="nav__email">
+                            <div class="nav__title">e-mail</div>
+                            <a href="mailto:trilha@digital.com" class="nav__info">trilha@digital.com</a>
 
+                        </div>
+                        <div class="nav__telefone">
+                            <div class="nav__title">telefone</div>
+                            <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank"
+                                class="nav__info">(51)99944-9070</a>
+                            <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank"
+                                class="nav__info">(51)99944-9072</a>
+                        </div>
                     </div>
-                    <div class="nav__telefone">
-                        <div class="nav__title">telefone</div>
-                        <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank"
-                            class="nav__info">(51)99944-9070</a>
-                        <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank"
-                            class="nav__info">(51)99944-9072</a>
-                    </div>
-                </div>
 
-                <div class="nav__socials">
-                    <a href="https://www.facebook.com/trilhadigitalagencia" target="_blank" class="nav__social"><i
-                            class='bx bxl-facebook-square'></i></a>
-                    <a href="https://www.instagram.com/agenciatrilhadigital_/" target="_blank" class="nav__social"><i
-                            class='bx bxl-instagram'></i></a>
-                    <a href="#" target="_blank" class="nav__social"><i class='bx bxl-linkedin-square'></i></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank" class="nav__social"><i
-                            class='bx bxl-whatsapp'></i></i></a>
+                    <div class="nav__socials">
+                        <a href="https://www.facebook.com/trilhadigitalagencia" target="_blank" class="nav__social"><i
+                                class='bx bxl-facebook-square'></i></a>
+                        <a href="https://www.instagram.com/agenciatrilhadigital_/" target="_blank"
+                            class="nav__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" target="_blank" class="nav__social"><i class='bx bxl-linkedin-square'></i></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5551981844464" target="_blank"
+                            class="nav__social"><i class='bx bxl-whatsapp'></i></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -150,7 +152,7 @@
                                         fill="#1B2124" fill-opacity="0.1" />
                                 </svg>
                             </div>
-                            <h2 class="solutions__title">Criação </br>de Sites</h2>
+                            <h2 class="solutions__titlecard">Criação </br>de Sites</h2>
                             <p class="solutions__description">Sites construídos do zero e pensados especialmente para
                                 seu negócio.</p>
                             <div class="solutions__tags">
@@ -212,7 +214,7 @@
                                         fill="#1B2124" fill-opacity="0.1" />
                                 </svg>
                             </div>
-                            <h2 class="solutions__title">Gestão de <br> Tráfego</h2>
+                            <h2 class="solutions__titlecard">Gestão de <br> Tráfego</h2>
                             <p class="solutions__description">Alcance seu público através de campanhas de anúncio no
                                 Google, Facebook e Instagram.</p>
                             <div id="tags" class="solutions__tags">
@@ -273,7 +275,7 @@
                                         fill="#1B2124" fill-opacity="0.1" />
                                 </svg>
                             </div>
-                            <h2 class="solutions__title">Gestão de </br> Redes</h2>
+                            <h2 class="solutions__titlecard">Gestão de </br> Redes</h2>
                             <p class="solutions__description">Se comunique com seus clientes e alcance novos públicos a
                                 partir de conteúdos estratégicos humanizados.</p>
                             <div id="tags" class="solutions__tags">
@@ -646,11 +648,11 @@
             <div class="wrapper">
                 <div class="form__text">
                     <h2 class="form__title">Chega de falar de nós! </br>Vamos falar sobre você.</h2>
-                    <p class="form__subtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea vitae
-                        quam aliquid aspernatur quia?</p>
+                    <p class="form__subtext">Compartilhe com nós seu problema ou sua vontade e bora buscar uma solução
+                        juntos!</p>
                 </div>
                 <div class="form__form">
-                    <form action="formpage.html" name="trilhaform" method="POST" data-netlify="true">
+                    <form action="/formpage.html" name="trilhaform" method="POST" data-netlify="true">
                         <div class="form__fields">
                             <label><input type="email" name="email" placeholder="e-mail"></label>
                             <label><input type="phone" name="number" placeholder="seu telefone"></label>
