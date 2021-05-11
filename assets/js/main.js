@@ -101,6 +101,56 @@ document.querySelectorAll('.processo__accordion-passo').forEach((item) => {
     });
 });
 
+/* Accordion 2 */
+document.querySelectorAll('.processoservice__accordion-passo').forEach((item) => {
+    item.addEventListener('click', (event) => {
+        let accCollapse = item.nextElementSibling;
+
+        if (!item.classList.contains('collapsing')) {
+
+        }
+
+        // Open accordion item
+        if (!item.classList.contains('open')) {
+            // Remove "collapse" and add "collapsing" class to .processo__collapse (sibling)
+
+            accCollapse.style.display = 'block';
+            let accHeight = accCollapse.clientHeight;
+
+            setTimeout(() => {
+                accCollapse.style.height = accHeight + 'px';
+                accCollapse.style.display = '';
+            }, 1);
+
+            accCollapse.classList = 'processoservice__collapse collapsing';
+
+            // After x amount of time, Remove "collapsing" class and add "open" class
+            setTimeout(() => {
+                accCollapse.classList = 'processoservice__collapse collapse open';
+            }, 300);
+        }
+
+        // Close accordion item
+        else {
+            // Remove "collapse open" from .processo__collapse, add "collapsing"
+            accCollapse.classList = 'processoservice__collapse collapsing';
+
+
+            setTimeout(() => {
+                accCollapse.style.height = '0px';
+            }, 1);
+
+
+            setTimeout(() => {
+                accCollapse.classList = 'processoservice__collapse collapse';
+                accCollapse.style.height = '';
+            }, 300);
+        }
+
+        item.classList.toggle('open');
+    });
+});
+
 /* Swiper */
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 2,
