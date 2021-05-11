@@ -2057,25 +2057,22 @@ img {
   margin-top: 0.5rem;
 }
 
-.processoservice__background {
-  background-color: #1a2023;
-}
-
-.processoservice {
+.processo {
   overflow: hidden;
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
-  padding-top: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 @media (max-width: 63.9375em) {
-  .processoservice {
+  .processo {
     width: 85%;
   }
 }
 
-.processoservice__container {
+.processo__container {
   margin-top: 1rem;
   margin-bottom: 1rem;
   position: relative;
@@ -2089,7 +2086,7 @@ img {
   width: 100%;
 }
 
-.processoservice__tag {
+.processo__tag {
   color: #eda41d;
   text-transform: uppercase;
   font-weight: 700;
@@ -2100,12 +2097,12 @@ img {
 }
 
 @media (max-width: 39.9375em) {
-  .processoservice {
+  .processo {
     /* Accordion text */
     /* Accordion*/
     /* Collapse */
   }
-  .processoservice__ac-text {
+  .processo__ac-text {
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -2120,37 +2117,37 @@ img {
             order: 1;
     margin-bottom: 3rem;
   }
-  .processoservice__button {
+  .processo__button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .processoservice__tag {
+  .processo__tag {
     text-align: center;
     margin-top: 1rem;
   }
-  .processoservice__info {
+  .processo__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .processoservice__ac-title {
-    color: white;
+  .processo__ac-title {
+    color: #1a2023;
     margin-bottom: 1rem;
     text-align: center;
   }
-  .processoservice__ac-description {
-    color: whitesmoke;
+  .processo__ac-description {
+    color: #7e7c7c;
     margin-bottom: 2rem;
     line-height: 1.6;
     text-align: center;
   }
-  .processoservice h1,
-  .processoservice h2,
-  .processoservice h3 {
+  .processo h1,
+  .processo h2,
+  .processo h3 {
     margin-top: 0;
   }
-  .processoservice__accordion {
+  .processo__accordion {
     width: 100%;
     margin-right: 2rem;
     margin-bottom: 2rem;
@@ -2158,11 +2155,11 @@ img {
         -ms-flex-order: 2;
             order: 2;
   }
-  .processoservice__accordion-item {
+  .processo__accordion-item {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    background-color: #272c2f;
+    background-color: whitesmoke;
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -2171,7 +2168,7 @@ img {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .processoservice__accordion-passo {
+  .processo__accordion-passo {
     cursor: pointer;
     margin-top: 0.5rem;
     display: -webkit-box;
@@ -2196,15 +2193,14 @@ img {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  .processoservice__accordion-passo path {
+  .processo__accordion-passo path {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  .processoservice__accordion-passo span {
-    color: white;
+  .processo__accordion-passo span {
     margin-left: -1rem;
   }
-  .processoservice__accordion-passo::after {
+  .processo__accordion-passo::after {
     content: "";
     display: block;
     width: 0.7rem;
@@ -2218,14 +2214,14 @@ img {
     transition: transform 300ms ease-in-out;
     transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
   }
-  .processoservice__content {
-    color: whitesmoke;
+  .processo__content {
+    color: #667e8a;
     line-height: 1.4;
     padding-bottom: 1rem;
     text-align: center;
     padding-top: 1rem;
   }
-  .processoservice__info {
+  .processo__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2234,49 +2230,49 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .processoservice__ac-text, .processoservice__accordion {
+  .processo__ac-text, .processo__accordion {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .processoservice__accordion-passo.open {
+  .processo__accordion-passo.open {
     font-weight: 700;
     color: #eda41d;
   }
-  .processoservice__accordion-passo.open path {
+  .processo__accordion-passo.open path {
     fill: #ecb21b;
   }
-  .processoservice__accordion-passo.open::after {
+  .processo__accordion-passo.open::after {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     background-image: url("/assets/img/processochevronyellow.svg");
   }
-  .processoservice__collapse {
+  .processo__collapse {
     -webkit-transition: height 300ms ease-in-out;
     transition: height 300ms ease-in-out;
   }
-  .processoservice__collapse.collapse {
+  .processo__collapse.collapse {
     display: none;
   }
-  .processoservice__collapse.collapsing {
+  .processo__collapse.collapsing {
     height: 0;
     overflow: hidden;
   }
-  .processoservice__collapse.open {
+  .processo__collapse.open {
     display: block;
   }
 }
 
 @media (min-width: 40em) {
-  .processoservice {
+  .processo {
     /* Accordion text */
     /* Accordion*/
     /* Collapse */
   }
-  .processoservice__data {
+  .processo__data {
     margin-top: 3rem;
   }
-  .processoservice__ac-text {
+  .processo__ac-text {
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -2293,32 +2289,32 @@ img {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .processoservice__info {
+  .processo__info {
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .processoservice__tag {
+  .processo__tag {
     margin-bottom: 1rem;
   }
-  .processoservice__ac-title {
+  .processo__ac-title {
     font-size: 2rem;
-    color: white;
+    color: #1a2023;
     margin-bottom: 1rem;
   }
-  .processoservice__ac-description {
-    color: #1a2023;
+  .processo__ac-description {
+    color: #7e7c7c;
     margin-bottom: 2rem;
     line-height: 1.6;
   }
-  .processoservice h1,
-  .processoservice h2,
-  .processoservice h3 {
+  .processo h1,
+  .processo h2,
+  .processo h3 {
     margin-top: 0;
   }
-  .processoservice__accordion {
+  .processo__accordion {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2329,15 +2325,15 @@ img {
     margin-right: 2rem;
     min-height: 100%;
   }
-  .processoservice__accordion-item {
-    background-color: #272c2f;
+  .processo__accordion-item {
+    background-color: whitesmoke;
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
     -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.01);
             box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.01);
   }
-  .processoservice__accordion-passo {
+  .processo__accordion-passo {
     cursor: pointer;
     margin-top: 0.5rem;
     display: -webkit-box;
@@ -2356,24 +2352,24 @@ img {
     padding: 0;
     font-size: 1.125rem;
     font-family: "Montserrat", sans-serif;
-    color: white;
+    color: #667e8a;
     font-weight: 700;
     margin-bottom: 0.5rem;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  .processoservice__accordion-passo path {
+  .processo__accordion-passo path {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  .processoservice__accordion-passo svg {
+  .processo__accordion-passo svg {
     margin-right: -13rem;
     position: absolute;
   }
-  .processoservice__accordion-passo span {
+  .processo__accordion-passo span {
     margin-left: 3.5rem;
   }
-  .processoservice__accordion-passo::after {
+  .processo__accordion-passo::after {
     content: "";
     display: block;
     width: 0.7rem;
@@ -2388,47 +2384,47 @@ img {
     transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
     margin-right: 0.5rem;
   }
-  .processoservice__content {
-    color: #7e7c7c;
+  .processo__content {
+    color: #667e8a;
     line-height: 1.4;
     padding-bottom: 1rem;
     margin-left: 3.5rem;
     max-width: 15rem;
   }
-  .processoservice__info {
+  .processo__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .processoservice__ac-text, .processoservice__accordion {
+  .processo__ac-text, .processo__accordion {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .processoservice__accordion-passo.open {
+  .processo__accordion-passo.open {
     font-weight: 700;
     color: #eda41d;
   }
-  .processoservice__accordion-passo.open path {
+  .processo__accordion-passo.open path {
     fill: #eda41d;
   }
-  .processoservice__accordion-passo.open::after {
+  .processo__accordion-passo.open::after {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     background-image: url("/assets/img/processochevronyellow.svg");
   }
-  .processoservice__collapse {
+  .processo__collapse {
     -webkit-transition: height 300ms ease-in-out;
     transition: height 300ms ease-in-out;
   }
-  .processoservice__collapse.collapse {
+  .processo__collapse.collapse {
     display: none;
   }
-  .processoservice__collapse.collapsing {
+  .processo__collapse.collapsing {
     height: 0;
     overflow: hidden;
   }
-  .processoservice__collapse.open {
+  .processo__collapse.open {
     display: block;
   }
 }
@@ -2550,14 +2546,14 @@ img {
 }
 
 .approach__label {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .approach__subtitle {
   font-size: 1.6rem;
   font-weight: 600;
   color: white;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .approach__description {
