@@ -148,19 +148,32 @@
             transition: all 0.3s ease-in-out;
         }
 
-        /*
-
-        .swiper-button-next:hover {
-            background-image: url(/assets/img/processochevronyellow.svg);
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
             transition: 0.3s ease-in-out;
+            display: none;
+        }
+    }
+
+    @include breakpoint-down(large) {
+        .swiper-button-next {
+            background-image: url(/assets/img/processochevron.svg);
+            background-repeat: no-repeat;
+            background-size: 40% auto;
+            background-position: center;
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
         }
 
-        .swiper-button-prev:hover {
-            background-image: url(/assets/img/processochevronyellow.svg);
+        .swiper-button-prev {
+            background-image: url(/assets/img/processochevron.svg);
+            background-repeat: no-repeat;
+            background-size: 40% auto;
+            background-position: center;
             transform: rotate(180deg);
-            transition: 0.3s ease-in-out;
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
         }
-        */
 
         .swiper-button-next::after,
         .swiper-button-prev::after {
@@ -168,4 +181,6 @@
             display: none;
         }
     }
+
+    
 }

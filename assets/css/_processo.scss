@@ -11,6 +11,10 @@
         width: 85%;
     }
 
+    &__ac-title {
+        font-size: 2rem;
+    }
+
 
     &__container {
         margin-top: 1rem;
@@ -35,7 +39,7 @@
         font-weight: 700;
         letter-spacing: 2px;
         justify-self: center;
-        margin-bottom: $mb-2;
+        margin-bottom: $mb-1;
     }
 
     @include breakpoint-down(small) {
@@ -214,9 +218,7 @@
             display: flex;
         }
 
-        &__tag {
-            margin-bottom: 1rem;
-        }
+        
 
         &__ac-title {
             font-size: 2rem;
@@ -242,6 +244,33 @@
             flex-direction: column;
             margin-right: 2rem;
             min-height: 100%;
+        }
+
+        &__fichatecnica {
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+            min-height: 100%;
+            padding: 2rem;
+            background-color: red;
+        }
+
+        &__ficha {
+
+        }
+
+        &__minitag {
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: $mainYellow;
+            padding-bottom: .2rem;
+        }
+
+        &__empresaname {
+            font-weight: 700;
+            color: $darkGray;
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
         }
 
         &__accordion-item {

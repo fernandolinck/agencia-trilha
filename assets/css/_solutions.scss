@@ -4,7 +4,6 @@
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
-    min-height: 630px;
     margin-top: 6rem;
     margin-bottom: 6rem;
 
@@ -28,7 +27,7 @@
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.2;
         color: $darkGray;
         text-align: center;
@@ -50,8 +49,8 @@
 
     &__cards {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        gap: .8rem;
     }
 
     @include breakpoint-down(medium) {
@@ -61,12 +60,15 @@
         }
     }
 
+    &__wrapper {
+        min-height: 500px;
+    }
 
     &__card {
         //background-color: $lightestYellow;
         justify-content: center;
         border-radius: 1rem;
-        padding: $mb-2;
+        padding: $mb-1;
         display: flex;
         position: relative;
         cursor: pointer;
@@ -130,6 +132,8 @@
         color: $textGray;
         margin-bottom: 0.5rem;
         line-height: 1.6;
+        width: 90%;
+        margin: 0 auto;
     }
 
     &__tags {
@@ -139,6 +143,10 @@
         transition: 0.3s ease-in-out;
 
         @include breakpoint-down(small){
+            opacity: 1;
+        }
+
+        @include breakpoint-down(medium){
             opacity: 1;
         }
     }
@@ -157,6 +165,10 @@
         transition: 0.5s ease-in-out;
 
         @include breakpoint-down(small){
+            height: 7rem;
+        }
+
+        @include breakpoint-down(medium){
             height: 7rem;
         }
     }

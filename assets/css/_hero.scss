@@ -21,6 +21,11 @@
         height: 100%;
     }
 
+    &__business {
+        color: $white;
+        margin-bottom: .4rem;
+    }
+
     &__subtitle,
     &__title,
     &__description {

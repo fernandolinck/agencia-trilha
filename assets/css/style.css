@@ -531,6 +531,11 @@ img {
   height: 100%;
 }
 
+.hero__business {
+  color: white;
+  margin-bottom: .4rem;
+}
+
 .hero__subtitle, .hero__title, .hero__description {
   color: white;
 }
@@ -583,6 +588,10 @@ img {
   }
 }
 
+.processo__ac-title {
+  font-size: 2rem;
+}
+
 .processo__container {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -604,7 +613,7 @@ img {
   letter-spacing: 2px;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 39.9375em) {
@@ -807,9 +816,6 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
-  .processo__tag {
-    margin-bottom: 1rem;
-  }
   .processo__ac-title {
     font-size: 2rem;
     color: #1a2023;
@@ -835,6 +841,31 @@ img {
             flex-direction: column;
     margin-right: 2rem;
     min-height: 100%;
+  }
+  .processo__fichatecnica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 2rem;
+    min-height: 100%;
+    padding: 2rem;
+    background-color: red;
+  }
+  .processo__minitag {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #eda41d;
+    padding-bottom: .2rem;
+  }
+  .processo__empresaname {
+    font-weight: 700;
+    color: #1a2023;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
   }
   .processo__accordion-item {
     background-color: whitesmoke;
@@ -1153,21 +1184,35 @@ img {
 }
 
 @media (max-width: 39.9375em) {
-  .portfolio {
-    /*
-
-        .swiper-button-next:hover {
-            background-image: url(/assets/img/processochevronyellow.svg);
-            transition: 0.3s ease-in-out;
-        }
-
-        .swiper-button-prev:hover {
-            background-image: url(/assets/img/processochevronyellow.svg);
-            transform: rotate(180deg);
-            transition: 0.3s ease-in-out;
-        }
-        */
+  .portfolio .swiper-button-next {
+    background-image: url(/assets/img/processochevron.svg);
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: center;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
+  .portfolio .swiper-button-prev {
+    background-image: url(/assets/img/processochevron.svg);
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: center;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .portfolio .swiper-button-next::after,
+  .portfolio .swiper-button-prev::after {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    display: none;
+  }
+}
+
+@media (max-width: 87.4375em) {
   .portfolio .swiper-button-next {
     background-image: url(/assets/img/processochevron.svg);
     background-repeat: no-repeat;
@@ -1605,7 +1650,6 @@ img {
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
-  min-height: 630px;
   margin-top: 6rem;
   margin-bottom: 6rem;
 }
@@ -1635,7 +1679,7 @@ img {
 }
 
 .solutions__title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   color: #1a2023;
   text-align: center;
@@ -1661,9 +1705,9 @@ img {
 .solutions__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: .8rem;
 }
 
 @media (max-width: 63.9375em) {
@@ -1678,12 +1722,16 @@ img {
   }
 }
 
+.solutions__wrapper {
+  min-height: 500px;
+}
+
 .solutions__card {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1764,6 +1812,8 @@ img {
   color: #7e7c7c;
   margin-bottom: 0.5rem;
   line-height: 1.6;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .solutions__tags {
@@ -1777,6 +1827,12 @@ img {
 }
 
 @media (max-width: 39.9375em) {
+  .solutions__tags {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 63.9375em) {
   .solutions__tags {
     opacity: 1;
   }
@@ -1798,6 +1854,14 @@ img {
 }
 
 @media (max-width: 39.9375em) {
+  .solutions__tags,
+  .solutions__cards:hover .solutions__tags,
+  .solutions__cards:active .solutions__tags {
+    height: 7rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
   .solutions__tags,
   .solutions__cards:hover .solutions__tags,
   .solutions__cards:active .solutions__tags {
@@ -2632,5 +2696,250 @@ img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.siteportfoliobg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#fffaeb));
+  background-image: linear-gradient(white, #fffaeb);
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.siteportfolio {
+  overflow: hidden;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 63.9375em) {
+  .siteportfolio {
+    width: 85%;
+  }
+}
+
+.siteportfolio__ac-title {
+  font-size: 2rem;
+}
+
+.siteportfolio__container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  height: 100%;
+  -ms-grid-rows: (max-content)[3];
+      grid-template-rows: repeat(3, -webkit-max-content);
+      grid-template-rows: repeat(3, max-content);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+.siteportfolio__tag {
+  color: #eda41d;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 39.9375em) {
+  .siteportfolio {
+    /* Accordion text */
+    /* Accordion*/
+  }
+  .siteportfolio__ac-text {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 3rem;
+  }
+  .siteportfolio__button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .siteportfolio__tag {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .siteportfolio__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .siteportfolio__ac-title {
+    color: #1a2023;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .siteportfolio__ac-description {
+    color: #7e7c7c;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .siteportfolio__fichatecnica {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    min-height: 100%;
+    padding: 2rem;
+  }
+  .siteportfolio__minitag {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #eda41d;
+    padding-bottom: 0.2rem;
+  }
+  .siteportfolio__empresaname {
+    font-weight: 700;
+    color: #1a2023;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+  }
+  .siteportfolio__ac-text, .siteportfolio__accordion {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .siteportfolio h1,
+  .siteportfolio h2,
+  .siteportfolio h3 {
+    margin-top: 0;
+  }
+  .siteportfolio__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .siteportfolio__ac-text, .siteportfolio__accordion {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (min-width: 40em) {
+  .siteportfolio {
+    /* Accordion text */
+    /* Accordion*/
+  }
+  .siteportfolio__data {
+    margin-top: 3rem;
+  }
+  .siteportfolio__ac-text {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .siteportfolio__info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .siteportfolio__ac-title {
+    font-size: 2rem;
+    color: #1a2023;
+    margin-bottom: 1rem;
+  }
+  .siteportfolio__ac-description {
+    color: #7e7c7c;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  .siteportfolio__ac-descriptiondark {
+    color: #272c2f;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  .siteportfolio h1,
+  .siteportfolio h2,
+  .siteportfolio h3 {
+    margin-top: 0;
+  }
+  .siteportfolio__accordion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 2rem;
+    min-height: 100%;
+  }
+  .siteportfolio__fichatecnica {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    min-height: 100%;
+    padding: 2rem;
+  }
+  .siteportfolio__minitag {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #eda41d;
+    padding-bottom: 0.2rem;
+  }
+  .siteportfolio__empresaname {
+    font-weight: 700;
+    color: #1a2023;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+  }
+  .siteportfolio__ac-text, .siteportfolio__accordion {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

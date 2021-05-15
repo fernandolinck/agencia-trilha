@@ -1,0 +1,214 @@
+.siteportfoliobg {
+    background-image: linear-gradient($white, $lightestYellow);
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.siteportfolio {
+    overflow: hidden;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+
+    @include breakpoint-down(medium) {
+        width: 85%;
+    }
+
+    &__ac-title {
+        font-size: 2rem;
+    }
+
+    &__container {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        height: 100%;
+        grid-template-rows: repeat(3, max-content);
+        align-content: center;
+        row-gap: 1rem;
+        width: 100%;
+    }
+
+    //&__data {
+    //margin-top: 0.rem;
+    //grid-template-columns: 2;
+    //justify-items: center;
+    //}
+
+    &__tag {
+        color: $mainYellow;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        justify-self: center;
+        margin-bottom: $mb-1;
+    }
+
+    @include breakpoint-down(small) {
+        /* Accordion text */
+        &__ac-text {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            order: 1;
+            margin-bottom: 3rem;
+        }
+
+        &__button {
+            align-self: center;
+        }
+
+        &__tag {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        &__info {
+            //margin: 2rem;
+            display: flex;
+        }
+
+        &__ac-title {
+            color: $darkGray;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        &__ac-description {
+            color: $textGray;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        &__fichatecnica {
+            flex: 0.6;
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            min-height: 100%;
+            padding: 2rem;
+        }
+
+
+        &__minitag {
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: $mainYellow;
+            padding-bottom: 0.2rem;
+        }
+
+        &__empresaname {
+            font-weight: 700;
+            color: $darkGray;
+            font-size: 1.2rem;
+            padding-bottom: 2rem;
+        }
+
+        &__ac-text,
+        &__accordion {
+            flex: 1;
+        }
+
+        /* Accordion*/
+        h1,
+        h2,
+        h3 {
+            margin-top: 0;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__ac-text,
+        &__accordion {
+            flex: 1;
+        }
+    }
+
+    @include breakpoint-up(medium) {
+        /* Accordion text */
+
+        &__data {
+            margin-top: 3rem;
+        }
+        &__ac-text {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+        }
+
+        &__info {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+        }
+
+        &__ac-title {
+            font-size: 2rem;
+            color: $darkGray;
+            margin-bottom: 1rem;
+        }
+
+        &__ac-description {
+            color: $textGray;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        &__ac-descriptiondark {
+            color: $mediumGray;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        /* Accordion*/
+        h1,
+        h2,
+        h3 {
+            margin-top: 0;
+        }
+
+        &__accordion {
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+            min-height: 100%;
+        }
+
+        &__fichatecnica {
+            flex: 0.6;
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            min-height: 100%;
+            padding: 2rem;
+        }
+
+
+        &__minitag {
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: $mainYellow;
+            padding-bottom: 0.2rem;
+        }
+
+        &__empresaname {
+            font-weight: 700;
+            color: $darkGray;
+            font-size: 1.2rem;
+            padding-bottom: 2rem;
+        }
+
+        &__ac-text,
+        &__accordion {
+            flex: 1;
+        }
+    }
+}
