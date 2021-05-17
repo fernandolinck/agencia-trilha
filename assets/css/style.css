@@ -64,6 +64,13 @@
   font-weight: 500;
 }
 
+.divider {
+  border-top: 2px solid #7e7c7c;
+  opacity: 10%;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+
 /* Base Styles */
 *,
 ::before,
@@ -2791,6 +2798,9 @@ img {
     line-height: 1.6;
     text-align: center;
   }
+  .siteportfolio__ac-description span {
+    color: #eda41d;
+  }
   .siteportfolio__fichatecnica {
     -webkit-box-flex: 0.6;
         -ms-flex: 0.6;
@@ -2887,6 +2897,9 @@ img {
     margin-bottom: 2rem;
     line-height: 1.6;
   }
+  .siteportfolio__ac-description span {
+    color: #eda41d;
+  }
   .siteportfolio__ac-descriptiondark {
     color: #272c2f;
     margin-bottom: 2rem;
@@ -2941,5 +2954,59 @@ img {
         -ms-flex: 1;
             flex: 1;
   }
+}
+
+/* .trailbanner {
+    display: flex;
+    background-image: url(/assets/img/florestaadjust.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100%;
+    width: 100%;
+
+    @include breakpoint-down(small){
+        display: none;
+    }
+
+    &__container {
+        height: 400px;
+        width: 100%;
+    }
+
+    &__ac-description {
+        color: $white;
+    }
+
+    &__info {
+        display: flex;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    &__ac-text {
+        justify-self: center;
+    }
+}
+
+.trailbanner__ac-title {
+    font-size: 2rem;
+    color: $white;
+    margin-bottom: 1rem;
+
+    span {
+        color: $mainYellow;
+    }
+}
+
+@include breakpoint-down(small) {
+    .trailbanner__ac-title {
+        color: $darkGray;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+*/
+.margintop {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

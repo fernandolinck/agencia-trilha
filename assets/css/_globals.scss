@@ -103,6 +103,12 @@ $z-fixed: 100;
     font-weight: $font-medium;
 }
 
+.divider {
+    border-top: 2px solid $textGray;
+    opacity: 10%;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
 /* Base Styles */
 *,
 ::before,
