@@ -4,6 +4,23 @@
     padding-bottom: 6rem;
 }
 
+.extramargin {
+    margin-top: 6rem;
+}
+
+.logotrilhagrid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.siteportfolio-dark {
+    background-color: $darkGray;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 .siteportfolio {
     overflow: hidden;
     max-width: 1024px;
@@ -14,9 +31,7 @@
         width: 85%;
     }
 
-    &__img {
-        
-    }
+   
 
     &__ac-title {
         font-size: 2rem;
@@ -133,6 +148,16 @@
         &__ac-text,
         &__accordion {
             flex: 1;
+        }
+
+        &__gridimages {
+            display: grid;
+            flex-direction: column;
+
+            svg {
+                margin-bottom: 2rem;
+                justify-self: center;
+            }
         }
     }
 

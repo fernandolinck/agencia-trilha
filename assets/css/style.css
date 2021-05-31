@@ -2719,6 +2719,23 @@ img {
   padding-bottom: 6rem;
 }
 
+.extramargin {
+  margin-top: 6rem;
+}
+
+.logotrilhagrid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.siteportfolio-dark {
+  background-color: #1a2023;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .siteportfolio {
   overflow: hidden;
   max-width: 1024px;
@@ -2859,6 +2876,19 @@ img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  .siteportfolio__gridimages {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .siteportfolio__gridimages svg {
+    margin-bottom: 2rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
