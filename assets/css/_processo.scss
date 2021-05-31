@@ -4,8 +4,7 @@
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    padding-top: 3rem;
 
     @include breakpoint-down(medium){
         width: 85%;
@@ -27,11 +26,7 @@
         width: 100%;
     }
 
-    //&__data {
-    //margin-top: 0.rem;
-    //grid-template-columns: 2;
-    //justify-items: center;
-    //}
+    
 
     &__tag {
         color: $mainYellow;
@@ -255,9 +250,7 @@
             background-color: red;
         }
 
-        &__ficha {
-
-        }
+        
 
         &__minitag {
             font-weight: 700;

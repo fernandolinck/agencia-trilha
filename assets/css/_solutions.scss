@@ -4,8 +4,8 @@
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    padding-top: 6rem;
+    //margin-bottom: 6rem;
 
     &__container {
         width: 100%;
@@ -40,17 +40,22 @@
         color: $textGray;
         text-align: center;
         margin-bottom: 2rem;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
 
-        @include breakpoint-down(small){
+        @include breakpoint-down(small) {
             color: $darkGray;
         }
     }
 
     &__cards {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: .8rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+        transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+    -o-transform: scale(0.8, 0.8); /* Opera */
+    -moz-transform: scale(0.8, 0.8); /* Firefox */
     }
 
     @include breakpoint-down(medium) {
@@ -93,7 +98,7 @@
         }
 
         .solutions__titlecard {
-            color: $darkGray;    
+            color: $darkGray;
         }
     }
 
@@ -142,11 +147,11 @@
         opacity: 0;
         transition: 0.3s ease-in-out;
 
-        @include breakpoint-down(small){
+        @include breakpoint-down(small) {
             opacity: 1;
         }
 
-        @include breakpoint-down(medium){
+        @include breakpoint-down(medium) {
             opacity: 1;
         }
     }
@@ -164,11 +169,11 @@
         overflow: hidden;
         transition: 0.5s ease-in-out;
 
-        @include breakpoint-down(small){
+        @include breakpoint-down(small) {
             height: 7rem;
         }
 
-        @include breakpoint-down(medium){
+        @include breakpoint-down(medium) {
             height: 7rem;
         }
     }

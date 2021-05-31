@@ -28,8 +28,12 @@ function scrollActive() {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.footer__links a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.hero__data a[href*=' + sectionId + ']').classList.add('active-link')
         } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            document.querySelector('.footer__links a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.hero__data a[href*=' + sectionId + ']').classList.add('active-link')
         }
     })
 }
