@@ -5,7 +5,7 @@
     margin: 0 auto;
     position: relative;
     padding-top: 6rem;
-    //margin-bottom: 6rem;
+    margin-bottom: -6rem;
 
     &__container {
         width: 100%;
@@ -14,6 +14,16 @@
 
     @include breakpoint-down(medium) {
         width: 85%;
+    }
+
+    &__main {
+        @include breakpoint-down(medium) {
+            margin-bottom: -4rem;
+        }
+
+        @include breakpoint-down(small) {
+            margin-bottom: -8rem;
+        }
     }
 
     &__tag {
@@ -56,6 +66,13 @@
     -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
     -o-transform: scale(0.8, 0.8); /* Opera */
     -moz-transform: scale(0.8, 0.8); /* Firefox */
+
+    @include breakpoint-down(medium){
+        margin-bottom: -4rem;
+    }
+    @include breakpoint-down(medium){
+        margin-bottom: -8rem;
+    }
     }
 
     @include breakpoint-down(medium) {
@@ -105,6 +122,10 @@
     &__data {
         display: flex;
         flex-direction: column;
+
+        @include breakpoint-down(medium) {
+            padding-bottom: 1rem;
+        }
     }
 
     &__img {

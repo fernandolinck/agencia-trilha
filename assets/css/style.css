@@ -585,7 +585,7 @@ img {
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 @media (max-width: 63.9375em) {
@@ -1657,6 +1657,7 @@ img {
   margin: 0 auto;
   position: relative;
   padding-top: 6rem;
+  margin-bottom: -6rem;
 }
 
 .solutions__container {
@@ -1667,6 +1668,18 @@ img {
 @media (max-width: 63.9375em) {
   .solutions {
     width: 85%;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .solutions__main {
+    margin-bottom: -4rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .solutions__main {
+    margin-bottom: -8rem;
   }
 }
 
@@ -1722,6 +1735,18 @@ img {
   /* Opera */
   -moz-transform: scale(0.8, 0.8);
   /* Firefox */
+}
+
+@media (max-width: 63.9375em) {
+  .solutions__cards {
+    margin-bottom: -4rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .solutions__cards {
+    margin-bottom: -8rem;
+  }
 }
 
 @media (max-width: 63.9375em) {
@@ -1786,6 +1811,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 63.9375em) {
+  .solutions__data {
+    padding-bottom: 1rem;
+  }
 }
 
 .solutions__img {
@@ -2115,6 +2146,12 @@ img {
 @media (min-width: 64em) {
   .service__title {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .service__title {
+    font-size: 2rem;
   }
 }
 
@@ -2611,7 +2648,19 @@ img {
   line-height: 1.2;
   color: white;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 40em) {
+  .approach__title {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .approach__title {
+    margin-bottom: 10rem;
+  }
 }
 
 .approach__item {
@@ -2624,6 +2673,7 @@ img {
 }
 
 .approach__label {
+  display: none;
   margin-bottom: .5rem;
 }
 
@@ -2716,11 +2766,24 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#fffaeb));
   background-image: linear-gradient(white, #fffaeb);
   padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
+}
+
+.portfoliomock {
+  height: 100%;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+@media (min-width: 40em) {
+  .portfoliomock {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .extramargin {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .logotrilhagrid {
@@ -2734,6 +2797,12 @@ img {
   background-color: #1a2023;
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+@media (max-width: 39.9375em) {
+  .siteportfolio-dark {
+    margin-top: -4rem;
+  }
 }
 
 .siteportfolio {
@@ -2841,6 +2910,15 @@ img {
     min-height: 100%;
     padding: 2rem;
   }
+}
+
+@media (max-width: 39.9375em) and (max-width: 39.9375em) {
+  .siteportfolio__fichatecnica {
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
   .siteportfolio__minitag {
     font-weight: 700;
     font-size: 0.875rem;

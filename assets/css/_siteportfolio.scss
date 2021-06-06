@@ -1,11 +1,22 @@
 .siteportfoliobg {
     background-image: linear-gradient($white, $lightestYellow);
     padding-top: 2rem;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
+}
+
+.portfoliomock {
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+
+    @include breakpoint-up(medium) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .extramargin {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .logotrilhagrid {
@@ -19,6 +30,10 @@
     background-color: $darkGray;
     padding-top: 4rem;
     padding-bottom: 4rem;
+
+    @include breakpoint-down(small){
+        margin-top: -4rem;
+    }
 }
 
 .siteportfolio {
@@ -30,8 +45,6 @@
     @include breakpoint-down(medium) {
         width: 85%;
     }
-
-   
 
     &__ac-title {
         font-size: 2rem;
@@ -112,6 +125,10 @@
             margin-left: 2rem;
             min-height: 100%;
             padding: 2rem;
+
+            @include breakpoint-down(small){
+                margin-top: -2rem;
+            }
         }
 
         &__minitag {
