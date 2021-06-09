@@ -212,6 +212,13 @@ img {
   transition: 0.2s ease-in-out;
 }
 
+@media (max-width: 39.9375em) {
+  .nav__wrapper {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 .nav__menu {
   position: fixed;
   top: 0;

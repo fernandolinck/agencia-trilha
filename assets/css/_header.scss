@@ -33,6 +33,12 @@
     transition: 0.2s ease-in-out;
     //margin: auto;
 
+    &__wrapper {
+        @include breakpoint-down(small){
+            transform: scale(0.8);
+        }
+    }
+
     &__menu {
         position: fixed;
         top: 0;
@@ -40,7 +46,6 @@
         right: -200%;
         width: 100%;
         height: 100%;
-
         margin: 0 auto;
         text-align: center;
         padding-top: 1.5rem;
